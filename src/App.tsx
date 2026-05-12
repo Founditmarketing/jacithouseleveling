@@ -512,119 +512,119 @@ export default function App() {
 
             {/* Service Block 01 */}
             <div className="min-w-[85vw] md:min-w-[450px] bg-white p-8 md:p-10 border border-gray-200/60 shadow-sm hover:shadow-2xl group relative overflow-hidden snap-center transition-all duration-500">
-              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal max-md:scale-[30] max-md:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
-              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 max-md:text-white/5 transition-colors duration-500 z-0 select-none">01</div>
+              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
+              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 transition-colors duration-500 z-0 select-none">01</div>
               <div className="relative z-10 flex flex-col h-full">
-                <img src="/Concrete-Pillar.H03.2k.png" alt="Pier & Beam Repair" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 max-md:-translate-y-2 max-md:scale-105 transition-transform duration-500 relative z-10" />
-                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full max-md:w-full transition-all duration-500 z-10"></div>
-                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white max-md:text-white transition-colors duration-500 relative z-10">Pier & Beam Repair</h4>
-                <p className="text-gray-600 group-hover:text-gray-300 max-md:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
+                <img src="/Concrete-Pillar.H03.2k.png" alt="Pier & Beam Repair" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 transition-transform duration-500 relative z-10" />
+                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full transition-all duration-500 z-10"></div>
+                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white transition-colors duration-500 relative z-10">Pier & Beam Repair</h4>
+                <p className="text-gray-600 group-hover:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
                   Comprehensive adjustments and timber replacements to restore stability to older, elevated homes.
                 </p>
-                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime max-md:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
-                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 max-md:translate-x-1 transition-transform" />
+                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
+                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
 
             {/* Service Block 02 */}
             <div className="min-w-[85vw] md:min-w-[450px] bg-white p-8 md:p-10 border border-gray-200/60 shadow-sm hover:shadow-2xl group relative overflow-hidden snap-center transition-all duration-500">
-              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal max-md:scale-[30] max-md:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
-              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 max-md:text-white/5 transition-colors duration-500 z-0 select-none">02</div>
+              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
+              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 transition-colors duration-500 z-0 select-none">02</div>
               <div className="relative z-10 flex flex-col h-full">
-                <img src="/Broken-Wall-Panel.H03.2k.png" alt="Slab Repair" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 max-md:-translate-y-2 max-md:scale-105 transition-transform duration-500 relative z-10" />
-                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full max-md:w-full transition-all duration-500 z-10"></div>
-                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white max-md:text-white transition-colors duration-500 relative z-10">Slab Repair</h4>
-                <p className="text-gray-600 group-hover:text-gray-300 max-md:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
+                <img src="/Broken-Wall-Panel.H03.2k.png" alt="Slab Repair" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 transition-transform duration-500 relative z-10" />
+                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full transition-all duration-500 z-10"></div>
+                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white transition-colors duration-500 relative z-10">Slab Repair</h4>
+                <p className="text-gray-600 group-hover:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
                   Hydraulic pressing and steel/concrete pier installation to permanently level concrete slabs.
                 </p>
-                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime max-md:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
-                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 max-md:translate-x-1 transition-transform" />
+                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
+                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
 
             {/* Service Block 03 */}
             <div className="min-w-[85vw] md:min-w-[450px] bg-white p-8 md:p-10 border border-gray-200/60 shadow-sm hover:shadow-2xl group relative overflow-hidden snap-center transition-all duration-500">
-              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal max-md:scale-[30] max-md:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
-              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 max-md:text-white/5 transition-colors duration-500 z-0 select-none">03</div>
+              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
+              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 transition-colors duration-500 z-0 select-none">03</div>
               <div className="relative z-10 flex flex-col h-full">
-                <img src="/Sandblasting-Machine-Red.H03.2k.png" alt="Foam Injection" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 max-md:-translate-y-2 max-md:scale-105 transition-transform duration-500 relative z-10" />
-                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full max-md:w-full transition-all duration-500 z-10"></div>
-                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white max-md:text-white transition-colors duration-500 relative z-10">Foam Injection</h4>
-                <p className="text-gray-600 group-hover:text-gray-300 max-md:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
+                <img src="/Sandblasting-Machine-Red.H03.2k.png" alt="Foam Injection" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 transition-transform duration-500 relative z-10" />
+                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full transition-all duration-500 z-10"></div>
+                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white transition-colors duration-500 relative z-10">Foam Injection</h4>
+                <p className="text-gray-600 group-hover:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
                   Efficient polyurethane foam lifting to void-fill and stabilize sinking concrete driveways and patios.
                 </p>
-                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime max-md:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
-                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 max-md:translate-x-1 transition-transform" />
+                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
+                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
 
             {/* Service Block 04 */}
             <div className="min-w-[85vw] md:min-w-[450px] bg-white p-8 md:p-10 border border-gray-200/60 shadow-sm hover:shadow-2xl group relative overflow-hidden snap-center transition-all duration-500">
-              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal max-md:scale-[30] max-md:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
-              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 max-md:text-white/5 transition-colors duration-500 z-0 select-none">04</div>
+              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
+              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 transition-colors duration-500 z-0 select-none">04</div>
               <div className="relative z-10 flex flex-col h-full">
-                <img src="/Steel-Shower-Drain.H03.2k.png" alt="Drainage Solutions" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 max-md:-translate-y-2 max-md:scale-105 transition-transform duration-500 relative z-10" />
-                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full max-md:w-full transition-all duration-500 z-10"></div>
-                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white max-md:text-white transition-colors duration-500 relative z-10">Drainage Solutions</h4>
-                <p className="text-gray-600 group-hover:text-gray-300 max-md:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
+                <img src="/Steel-Shower-Drain.H03.2k.png" alt="Drainage Solutions" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 transition-transform duration-500 relative z-10" />
+                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full transition-all duration-500 z-10"></div>
+                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white transition-colors duration-500 relative z-10">Drainage Solutions</h4>
+                <p className="text-gray-600 group-hover:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
                   French drains and grading adjustments to divert water away from your foundation.
                 </p>
-                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime max-md:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
-                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 max-md:translate-x-1 transition-transform" />
+                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
+                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
 
             {/* Service Block 05 */}
             <div className="min-w-[85vw] md:min-w-[450px] bg-white p-8 md:p-10 border border-gray-200/60 shadow-sm hover:shadow-2xl group relative overflow-hidden snap-center transition-all duration-500">
-              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal max-md:scale-[30] max-md:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
-              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 max-md:text-white/5 transition-colors duration-500 z-0 select-none">05</div>
+              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
+              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 transition-colors duration-500 z-0 select-none">05</div>
               <div className="relative z-10 flex flex-col h-full">
-                <img src="/Construction-Foundation-Pit.H03.2k.png" alt="Root Barriers" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 max-md:-translate-y-2 max-md:scale-105 transition-transform duration-500 relative z-10" />
-                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full max-md:w-full transition-all duration-500 z-10"></div>
-                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white max-md:text-white transition-colors duration-500 relative z-10">Root Barriers</h4>
-                <p className="text-gray-600 group-hover:text-gray-300 max-md:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
+                <img src="/Construction-Foundation-Pit.H03.2k.png" alt="Root Barriers" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 transition-transform duration-500 relative z-10" />
+                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full transition-all duration-500 z-10"></div>
+                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white transition-colors duration-500 relative z-10">Root Barriers</h4>
+                <p className="text-gray-600 group-hover:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
                   Preventative installations to stop invasive tree roots from compromising structural integrity.
                 </p>
-                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime max-md:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
-                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 max-md:translate-x-1 transition-transform" />
+                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
+                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
 
             {/* Service Block 06 */}
             <div className="min-w-[85vw] md:min-w-[450px] bg-white p-8 md:p-10 border border-gray-200/60 shadow-sm hover:shadow-2xl group relative overflow-hidden snap-center transition-all duration-500">
-              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal max-md:scale-[30] max-md:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
-              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 max-md:text-white/5 transition-colors duration-500 z-0 select-none">06</div>
+              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
+              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 transition-colors duration-500 z-0 select-none">06</div>
               <div className="relative z-10 flex flex-col h-full">
-                <img src="/Gear-Setting-Repair-Symbol.H03.2k.png" alt="Commercial Prep" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 max-md:-translate-y-2 max-md:scale-105 transition-transform duration-500 relative z-10" />
-                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full max-md:w-full transition-all duration-500 z-10"></div>
-                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white max-md:text-white transition-colors duration-500 relative z-10">Commercial Prep</h4>
-                <p className="text-gray-600 group-hover:text-gray-300 max-md:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
+                <img src="/Gear-Setting-Repair-Symbol.H03.2k.png" alt="Commercial Prep" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 transition-transform duration-500 relative z-10" />
+                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full transition-all duration-500 z-10"></div>
+                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white transition-colors duration-500 relative z-10">Commercial Prep</h4>
+                <p className="text-gray-600 group-hover:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
                   Heavy-duty leveling solutions tailored for industrial and commercial structures in East Texas.
                 </p>
-                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime max-md:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
-                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 max-md:translate-x-1 transition-transform" />
+                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
+                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
 
             {/* Service Block 07 */}
             <div className="min-w-[85vw] md:min-w-[450px] bg-white p-8 md:p-10 border border-gray-200/60 shadow-sm hover:shadow-2xl group relative overflow-hidden snap-center transition-all duration-500">
-              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal max-md:scale-[30] max-md:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
-              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 max-md:text-white/5 transition-colors duration-500 z-0 select-none">07</div>
+              <div className="absolute -right-16 -bottom-16 w-32 h-32 bg-gray-50 rounded-full z-0 group-hover:scale-[30] group-hover:bg-jac-charcoal transition-all duration-700 ease-in-out"></div>
+              <div className="absolute top-6 right-8 font-display font-black text-6xl md:text-7xl text-gray-100 group-hover:text-white/5 transition-colors duration-500 z-0 select-none">07</div>
               <div className="relative z-10 flex flex-col h-full">
-                <img src="/Survey-Automatic-Level-on-Tripod.H03.2k.png" alt="Free Evaluations" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 max-md:-translate-y-2 max-md:scale-105 transition-transform duration-500 relative z-10" />
-                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full max-md:w-full transition-all duration-500 z-10"></div>
-                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white max-md:text-white transition-colors duration-500 relative z-10">Free Evaluations</h4>
-                <p className="text-gray-600 group-hover:text-gray-300 max-md:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
+                <img src="/Survey-Automatic-Level-on-Tripod.H03.2k.png" alt="Free Evaluations" className="w-36 h-36 mb-6 object-contain drop-shadow-sm group-hover:-translate-y-2 group-hover:scale-105 transition-transform duration-500 relative z-10" />
+                <div className="w-12 h-[3px] bg-jac-lime mb-5 group-hover:w-full transition-all duration-500 z-10"></div>
+                <h4 className="font-subdisplay font-bold text-3xl uppercase mb-4 group-hover:text-white transition-colors duration-500 relative z-10">Free Evaluations</h4>
+                <p className="text-gray-600 group-hover:text-gray-300 text-base mb-8 leading-relaxed transition-colors duration-500 relative z-10 flex-grow">
                   Comprehensive structural assessments from our seasoned experts at zero upfront cost.
                 </p>
-                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime max-md:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
-                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 max-md:translate-x-1 transition-transform" />
+                <a href="#" className="font-bold tracking-wide flex items-center gap-2 text-jac-charcoal group-hover:text-jac-lime transition-colors duration-500 relative z-10 mt-auto uppercase text-sm">
+                  Learn More <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </a>
               </div>
             </div>
@@ -779,46 +779,46 @@ export default function App() {
               
               <div className="flex flex-col items-center text-center group bg-white border border-jac-green/30 p-8 pt-10 shadow-sm hover:shadow-2xl transition-all duration-500 relative overflow-hidden rounded-sm hover:-translate-y-2">
                 {/* Decorative Corner Accents */}
-                <div className="absolute top-2 left-2 w-8 h-8 border-t-4 border-l-4 border-transparent group-hover:border-jac-green transition-all duration-500 group-hover:top-4 group-hover:left-4"></div>
-                <div className="absolute bottom-2 right-2 w-8 h-8 border-b-4 border-r-4 border-transparent group-hover:border-jac-green transition-all duration-500 group-hover:bottom-4 group-hover:right-4"></div>
+                <div className="absolute top-2 left-2 w-8 h-8 border-t-4 border-l-4 border-transparent group-hover:border-jac-green max-md:border-jac-green group-hover:top-4 max-md:top-4 group-hover:left-4 max-md:left-4"></div>
+                <div className="absolute bottom-2 right-2 w-8 h-8 border-b-4 border-r-4 border-transparent group-hover:border-jac-green max-md:border-jac-green group-hover:bottom-4 max-md:bottom-4 group-hover:right-4 max-md:right-4"></div>
                 {/* Background Hover Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-jac-green/0 to-jac-lime/0 group-hover:from-jac-green/5 group-hover:to-jac-lime/5 transition-all duration-500 z-0"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-jac-green/0 to-jac-lime/0 group-hover:from-jac-green/5 max-md:from-jac-green/5 group-hover:to-jac-lime/5 max-md:to-jac-lime/5 transition-all duration-500 z-0"></div>
                 
                 {/* Watermark Number */}
-                <div className="absolute top-2 right-4 text-7xl font-display font-black text-gray-100 group-hover:text-jac-lime/20 transition-colors duration-500 select-none z-0">
+                <div className="absolute top-2 right-4 text-7xl font-display font-black text-gray-100 group-hover:text-jac-lime/20 max-md:text-jac-lime/20 transition-colors duration-500 select-none z-0">
                   01
                 </div>
-                <h4 className="font-subdisplay font-bold text-2xl uppercase mb-4 mt-6 text-jac-charcoal tracking-wide relative z-10 group-hover:text-jac-green transition-colors duration-300">No Cut Corners</h4>
+                <h4 className="font-subdisplay font-bold text-2xl uppercase mb-4 mt-6 text-jac-charcoal tracking-wide relative z-10 group-hover:text-jac-green max-md:text-jac-green transition-colors duration-300">No Cut Corners</h4>
                 <p className="text-gray-600 leading-relaxed max-w-sm relative z-10">Unlike competitors who space piers too far apart to cut costs, we install structural supports at engineering-approved intervals, ensuring the repair outlasts your mortgage.</p>
               </div>
 
               <div className="flex flex-col items-center text-center group bg-white border border-jac-green/30 p-8 pt-10 shadow-sm hover:shadow-2xl transition-all duration-500 relative overflow-hidden rounded-sm hover:-translate-y-2">
                 {/* Decorative Corner Accents */}
-                <div className="absolute top-2 left-2 w-8 h-8 border-t-4 border-l-4 border-transparent group-hover:border-jac-green transition-all duration-500 group-hover:top-4 group-hover:left-4"></div>
-                <div className="absolute bottom-2 right-2 w-8 h-8 border-b-4 border-r-4 border-transparent group-hover:border-jac-green transition-all duration-500 group-hover:bottom-4 group-hover:right-4"></div>
+                <div className="absolute top-2 left-2 w-8 h-8 border-t-4 border-l-4 border-transparent group-hover:border-jac-green max-md:border-jac-green group-hover:top-4 max-md:top-4 group-hover:left-4 max-md:left-4"></div>
+                <div className="absolute bottom-2 right-2 w-8 h-8 border-b-4 border-r-4 border-transparent group-hover:border-jac-green max-md:border-jac-green group-hover:bottom-4 max-md:bottom-4 group-hover:right-4 max-md:right-4"></div>
                 {/* Background Hover Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-jac-green/0 to-jac-lime/0 group-hover:from-jac-green/5 group-hover:to-jac-lime/5 transition-all duration-500 z-0"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-jac-green/0 to-jac-lime/0 group-hover:from-jac-green/5 max-md:from-jac-green/5 group-hover:to-jac-lime/5 max-md:to-jac-lime/5 transition-all duration-500 z-0"></div>
 
                 {/* Watermark Number */}
-                <div className="absolute top-2 right-4 text-7xl font-display font-black text-gray-100 group-hover:text-jac-lime/20 transition-colors duration-500 select-none z-0">
+                <div className="absolute top-2 right-4 text-7xl font-display font-black text-gray-100 group-hover:text-jac-lime/20 max-md:text-jac-lime/20 transition-colors duration-500 select-none z-0">
                   02
                 </div>
-                <h4 className="font-subdisplay font-bold text-2xl uppercase mb-4 mt-6 text-jac-charcoal tracking-wide relative z-10 group-hover:text-jac-green transition-colors duration-300">Heavy-Duty Materials</h4>
+                <h4 className="font-subdisplay font-bold text-2xl uppercase mb-4 mt-6 text-jac-charcoal tracking-wide relative z-10 group-hover:text-jac-green max-md:text-jac-green transition-colors duration-300">Heavy-Duty Materials</h4>
                 <p className="text-gray-600 leading-relaxed max-w-sm relative z-10">We use commercial-grade concrete cylinders and steel shims exclusively. We never use subpar wood shims on slab foundations that will rot away in Texas humidity.</p>
               </div>
 
               <div className="flex flex-col items-center text-center group bg-white border border-jac-green/30 p-8 pt-10 shadow-sm hover:shadow-2xl transition-all duration-500 relative overflow-hidden rounded-sm hover:-translate-y-2">
                 {/* Decorative Corner Accents */}
-                <div className="absolute top-2 left-2 w-8 h-8 border-t-4 border-l-4 border-transparent group-hover:border-jac-green transition-all duration-500 group-hover:top-4 group-hover:left-4"></div>
-                <div className="absolute bottom-2 right-2 w-8 h-8 border-b-4 border-r-4 border-transparent group-hover:border-jac-green transition-all duration-500 group-hover:bottom-4 group-hover:right-4"></div>
+                <div className="absolute top-2 left-2 w-8 h-8 border-t-4 border-l-4 border-transparent group-hover:border-jac-green max-md:border-jac-green group-hover:top-4 max-md:top-4 group-hover:left-4 max-md:left-4"></div>
+                <div className="absolute bottom-2 right-2 w-8 h-8 border-b-4 border-r-4 border-transparent group-hover:border-jac-green max-md:border-jac-green group-hover:bottom-4 max-md:bottom-4 group-hover:right-4 max-md:right-4"></div>
                 {/* Background Hover Effect */}
-                <div className="absolute inset-0 bg-gradient-to-br from-jac-green/0 to-jac-lime/0 group-hover:from-jac-green/5 group-hover:to-jac-lime/5 transition-all duration-500 z-0"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-jac-green/0 to-jac-lime/0 group-hover:from-jac-green/5 max-md:from-jac-green/5 group-hover:to-jac-lime/5 max-md:to-jac-lime/5 transition-all duration-500 z-0"></div>
 
                 {/* Watermark Number */}
-                <div className="absolute top-2 right-4 text-7xl font-display font-black text-gray-100 group-hover:text-jac-lime/20 transition-colors duration-500 select-none z-0">
+                <div className="absolute top-2 right-4 text-7xl font-display font-black text-gray-100 group-hover:text-jac-lime/20 max-md:text-jac-lime/20 transition-colors duration-500 select-none z-0">
                   03
                 </div>
-                <h4 className="font-subdisplay font-bold text-2xl uppercase mb-4 mt-6 text-jac-charcoal tracking-wide relative z-10 group-hover:text-jac-green transition-colors duration-300">Owner On-Site</h4>
+                <h4 className="font-subdisplay font-bold text-2xl uppercase mb-4 mt-6 text-jac-charcoal tracking-wide relative z-10 group-hover:text-jac-green max-md:text-jac-green transition-colors duration-300">Owner On-Site</h4>
                 <p className="text-gray-600 leading-relaxed max-w-sm relative z-10">James Wilson personally oversees crucial lifts. You aren't getting a franchise sub-contractor; you're getting the owner ensuring your home is handled perfectly.</p>
               </div>
 
