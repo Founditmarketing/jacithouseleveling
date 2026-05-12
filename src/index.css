@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/ethnocentric');
+@import url('https://fonts.cdnfonts.com/css/birds-of-paradise-personal-use');
 @import "tailwindcss";
 
 @theme {
@@ -11,15 +13,19 @@
   --color-cardinal-light: #e62e2d;
   --color-cardinal-bright: #ff3c3b;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Ethnocentric Rg", "Barlow", ui-sans-serif, system-ui, sans-serif;
+  --font-subdisplay: "Bebas Neue", sans-serif;
 }
 
 @layer base {
   body {
     @apply font-sans antialiased bg-white text-jac-charcoal;
   }
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2 {
     @apply font-display tracking-tight;
+  }
+  h3, h4, h5, h6 {
+    @apply font-subdisplay tracking-wide uppercase;
   }
 }
 
@@ -41,4 +47,18 @@
 
 .diagonal-card {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%);
+}
+
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.03) 1px, transparent 1px);
+}
+
+.bg-grid-pattern-dark {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
 }
