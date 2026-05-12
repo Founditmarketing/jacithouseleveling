@@ -212,7 +212,7 @@ export default function App() {
           >
             <div className="absolute top-0 left-0 w-full p-6 flex justify-between items-center bg-jac-charcoal border-b border-white/10 shadow-lg">
               <div className="flex items-center relative h-10 w-32">
-                <img src="/jacitlogohorizontalwhite.png" alt="JAC-IT Foundation Repair" className="absolute -left-2 top-1/2 -translate-y-1/2 w-40 object-contain drop-shadow-md" />
+                <img src="/jacitlogohorizontal.png" alt="JAC-IT Foundation Repair" className="absolute -left-2 top-1/2 -translate-y-1/2 w-40 object-contain drop-shadow-md" />
               </div>
               <button 
                 onClick={() => setIsMobileMenuOpen(false)}
