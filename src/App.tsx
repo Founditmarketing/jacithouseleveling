@@ -726,13 +726,18 @@ export default function App() {
       <section className="bg-jac-charcoal py-24 relative overflow-hidden">
 
         <div className="max-w-[1400px] mx-auto px-6 relative z-10 text-center">
-          <h2 className="font-display font-black text-4xl md:text-6xl text-jac-lime uppercase mb-6 tracking-tight">
+          <h2 className="font-display font-black text-3xl sm:text-4xl md:text-6xl text-jac-lime uppercase mb-6 tracking-tight">
             Secure Your Home's Future Today!
           </h2>
           <div className="flex flex-col items-center gap-6 justify-center text-white">
-            <a href="tel:18776552248" className="text-3xl md:text-5xl font-bold hover:text-white/80 tracking-wide">
-              1-877-65-JACIT (1-877-655-2248)
-            </a>
+            <div className="flex flex-col items-center gap-1">
+              <a href="tel:18776552248" className="text-3xl md:text-5xl font-bold hover:text-white/80 tracking-wide">
+                1-877-65-JACIT
+              </a>
+              <a href="tel:18776552248" className="text-lg md:text-xl text-gray-400 font-medium hover:text-white/80 tracking-wider">
+                1-877-655-2248
+              </a>
+            </div>
             <a href="mailto:james@jac-itfoundationrepair.com" className="text-lg md:text-xl text-gray-400 hover:text-jac-lime font-medium">
               james@jac-itfoundationrepair.com
             </a>
