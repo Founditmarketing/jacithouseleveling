@@ -212,7 +212,7 @@ export default function App() {
           >
             <div className="absolute top-0 left-0 w-full p-6 flex justify-between items-center bg-jac-charcoal border-b border-white/10 shadow-lg">
               <div className="flex items-center relative h-10 w-32">
-                <img src="/jacitlogohorizontalblack.png" alt="JAC-IT Foundation Repair" className="absolute -left-2 top-1/2 -translate-y-1/2 w-40 object-contain drop-shadow-md brightness-0 invert" />
+                <img src="/jacitlogohorizontalwhite.png" alt="JAC-IT Foundation Repair" className="absolute -left-2 top-1/2 -translate-y-1/2 w-40 object-contain drop-shadow-md" />
               </div>
               <button 
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -472,8 +472,8 @@ export default function App() {
           <div className="absolute inset-0 bg-white/[0.08]" style={{ clipPath: 'polygon(0 100%, 0 calc(100% - 30vw), 30vw 100%)' }}></div>
         </div>
 
-        <div className="max-w-[1400px] mx-auto px-6 relative z-10">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-12 text-white">
+        <div className="max-w-[1400px] mx-auto px-6 relative z-10 mb-8">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-8 text-white">
             <div className="max-w-2xl">
               <h2 className="font-display font-black text-5xl uppercase md:whitespace-nowrap">What We Do</h2>
             </div>
