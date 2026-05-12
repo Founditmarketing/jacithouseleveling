@@ -472,12 +472,12 @@ export default function App() {
           <div className="absolute inset-0 bg-white/[0.08]" style={{ clipPath: 'polygon(0 100%, 0 calc(100% - 30vw), 30vw 100%)' }}></div>
         </div>
 
-        <div className="max-w-[1400px] mx-auto px-6 relative z-10 mb-8">
-          <div className="flex flex-col md:flex-row justify-between items-end mb-8 text-white">
+        <div className="max-w-[1400px] mx-auto px-6 relative z-10 mb-4 md:mb-8">
+          <div className="flex flex-col md:flex-row justify-between items-end mb-6 md:mb-12 text-white">
             <div className="max-w-2xl">
               <h2 className="font-display font-black text-5xl uppercase md:whitespace-nowrap">What We Do</h2>
             </div>
-            <div className="flex gap-4 mt-8 md:mt-0 relative z-50">
+            <div className="flex gap-4 mt-4 md:mt-0 relative z-50">
               <button onClick={handleScrollLeft} className="w-12 h-12 border-2 border-white/20 flex items-center justify-center hover:bg-jac-lime hover:border-jac-lime hover:text-jac-charcoal transition-all z-50 relative pointer-events-auto cursor-pointer">
                 <ChevronLeft className="w-6 h-6" />
               </button>
