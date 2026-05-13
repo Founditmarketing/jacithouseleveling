@@ -262,7 +262,7 @@ export default function App() {
       </AnimatePresence>
 
       {/* Hero Section */}
-      <section className="relative min-h-[100vh] md:min-h-[85vh] flex items-center bg-jac-dark overflow-hidden pt-28 pb-20 md:py-20">
+      <section className="relative min-h-[90vh] md:min-h-[80vh] flex items-center bg-jac-dark overflow-hidden pt-28 pb-12 md:pt-24 md:pb-16">
         <div className="absolute inset-0 z-0">
           <img
             src="/jacitimage.jpg"
