@@ -178,9 +178,9 @@ export default function Layout() {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-[100] bg-jac-charcoal flex flex-col items-center justify-center lg:hidden"
+            className="fixed inset-0 z-[100] bg-jac-charcoal flex flex-col lg:hidden overflow-y-auto"
           >
-            <div className="absolute top-0 left-0 w-full p-6 flex justify-between items-center bg-jac-charcoal border-b border-white/10 shadow-lg">
+            <div className="sticky top-0 left-0 z-50 w-full p-6 flex justify-between items-center bg-jac-charcoal border-b border-white/10 shadow-lg">
               <div className="flex items-center relative h-10 w-32">
                 <img src="/jacitlogohorizontal.png" alt="JAC-IT Foundation Repair" className="absolute -left-2 top-1/2 -translate-y-1/2 w-40 object-contain drop-shadow-md" />
               </div>
@@ -193,12 +193,12 @@ export default function Layout() {
             </div>
 
             {/* Geometric Background Accents */}
-            <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+            <div className="fixed inset-0 pointer-events-none overflow-hidden z-0">
               <div className="absolute top-1/4 -right-1/4 w-96 h-96 bg-jac-lime/5 rounded-full blur-3xl"></div>
               <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-jac-lime/5 to-transparent"></div>
             </div>
 
-            <nav className="flex flex-col items-center gap-8 text-center relative z-10 w-full px-6">
+            <nav className="flex flex-col items-center justify-center gap-8 text-center relative z-10 w-full px-6 pt-12 pb-12 min-h-[calc(100vh-100px)]">
               <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">Home</Link>
               <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">About Us</Link>
               
