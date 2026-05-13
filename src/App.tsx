@@ -939,15 +939,7 @@ export default function App() {
               </a>
             </div>
             
-            <div className="mt-10">
-              <h5 className="font-bold text-white uppercase tracking-wide text-xs mb-3">Newsletter</h5>
-              <form className="flex items-stretch border border-white/10 focus-within:border-jac-lime transition-colors group max-w-sm">
-                <input type="email" placeholder="Email Address" className="bg-transparent px-4 py-3 text-sm text-white focus:outline-none w-full placeholder-gray-600 font-medium" />
-                <button type="submit" className="bg-white/5 text-gray-400 px-4 group-focus-within:bg-jac-lime group-focus-within:text-jac-charcoal transition-colors">
-                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </button>
-              </form>
-            </div>
+
           </div>
 
           <div className="lg:pl-8">
