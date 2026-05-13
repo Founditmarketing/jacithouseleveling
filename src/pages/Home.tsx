@@ -191,7 +191,7 @@ export default function Home({ isLoading }: { isLoading: boolean }) {
                 transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
                 className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed font-medium"
               >
-                Expert foundation repair and house leveling across Deep East Texas. Honest craftsmanship you can trust.
+                Expert foundation repair and house leveling across Deep East Texas. Honest craftsmanship you can trust. Licensed, Insured, Locally Owned & Operated.
               </motion.p>
 
               <motion.div
@@ -239,14 +239,23 @@ export default function Home({ isLoading }: { isLoading: boolean }) {
 
       {/* Solid Text Sub-Banner matching Base Layer Color */}
       <section className="bg-jac-green text-white pt-16 pb-16 relative z-30 -mt-1">
-        <div className="max-w-[1400px] mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
-          <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl leading-tight">
-            Licensed, Insured, Locally Owned &amp; Operated
+        <div className="max-w-[1400px] mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+          <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl leading-tight text-white uppercase tracking-tight">
+            Spring Special – <span className="text-jac-lime drop-shadow-md">10% Off Foundation Repairs!</span>
           </h2>
           <div className="space-y-6">
-            <p className="text-lg leading-relaxed text-white/95">
-              At Jac-It House Leveling & Foundation Repair, we take immense pride in serving our neighbors. As a fully licensed and insured, locally owned business, we treat every property like our own. Our deep East Texas roots mean you get honest assessments, dedicated craftsmanship, and a team that stands by its work long after the job is done.
+            <p className="text-xl md:text-2xl leading-relaxed text-white/95 font-medium">
+              Schedule your free inspection before it’s too late
             </p>
+            <Link to="/contact" className="inline-flex items-stretch group relative overflow-hidden border border-white mt-2">
+              <div className="absolute inset-0 bg-jac-lime w-0 group-hover:w-full transition-all duration-300 ease-out z-0"></div>
+              <div className="bg-transparent group-hover:text-jac-charcoal text-white px-8 py-4 font-bold tracking-wide text-lg flex items-center justify-center relative z-10 transition-colors duration-300 uppercase">
+                Book Now
+              </div>
+              <div className="border-l border-white/30 group-hover:border-transparent group-hover:text-jac-charcoal px-6 flex items-center justify-center relative z-10 transition-colors duration-300 text-white">
+                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
+              </div>
+            </Link>
           </div>
         </div>
       </section>
