@@ -307,16 +307,18 @@ export default function App() {
           </div>
         </div>
 
+        {/* BBB Logo Top Right */}
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
+          className="absolute top-28 md:top-32 right-6 md:right-12 z-20"
+        >
+          <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-16 sm:h-20 w-auto brightness-0 invert opacity-90 drop-shadow-md" />
+        </motion.div>
+
         <div className="relative z-20 max-w-[1400px] mx-auto px-6 w-full mt-12 md:mt-0">
           <div className="max-w-3xl">
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              className="mb-8"
-            >
-              <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-16 sm:h-20 w-auto brightness-0 invert opacity-90 drop-shadow-md" />
-            </motion.div>
 
             <motion.h1
               initial={{ y: 30, opacity: 0 }}
