@@ -324,7 +324,7 @@ export default function App() {
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed font-medium"
             >
-              We provide premier foundation repair and house leveling services across Deep East Texas. Trust our experienced team to secure your home's structural integrity with honesty and craftsmanship.
+              Premier foundation repair and house leveling in Deep East Texas. Securing your home's structural integrity with honest, expert craftsmanship.
             </motion.p>
 
             <motion.div
