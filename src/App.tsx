@@ -312,7 +312,7 @@ export default function App() {
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
-          className="absolute top-28 md:top-32 right-6 md:right-12 z-20"
+          className="absolute top-20 md:top-32 right-2 md:right-12 z-20"
         >
           <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-16 sm:h-20 w-auto brightness-0 invert opacity-90 drop-shadow-md" />
         </motion.div>
