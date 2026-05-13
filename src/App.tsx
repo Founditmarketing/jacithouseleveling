@@ -165,12 +165,11 @@ export default function App() {
 
           {/* Nav */}
           <nav className="hidden lg:flex items-center justify-center gap-8">
-            <NavLink>About</NavLink>
-            <NavLink>Services <ChevronDown className="w-3 h-3 opacity-50" /></NavLink>
-            <NavLink>Locations <ChevronDown className="w-3 h-3 opacity-50" /></NavLink>
-            <NavLink>Projects</NavLink>
-            <NavLink>Careers</NavLink>
-            <NavLink>Contact</NavLink>
+            <NavLink href="#">Home</NavLink>
+            <NavLink href="#about">About Us</NavLink>
+            <NavLink href="#services">Services</NavLink>
+            <NavLink href="#projects">Gallery</NavLink>
+            <NavLink href="#contact">Contact Us</NavLink>
           </nav>
 
           {/* CTA */}
@@ -183,10 +182,10 @@ export default function App() {
             >
               <Facebook className="w-5 h-5" />
             </a>
-            <a href="#portal" className="flex items-stretch text-jac-charcoal group relative overflow-hidden border border-jac-charcoal">
+            <a href="tel:18776552248" className="flex items-stretch text-jac-charcoal group relative overflow-hidden border border-jac-charcoal">
               <div className="absolute inset-0 bg-jac-charcoal w-0 group-hover:w-full transition-all duration-300 ease-out z-0"></div>
               <div className="group-hover:text-white px-6 py-3 font-bold tracking-wide text-sm flex items-center justify-center relative z-10 transition-colors duration-300">
-                Employee Portal
+                Call Today
               </div>
               <div className="border-l border-jac-charcoal group-hover:border-transparent group-hover:text-white px-4 py-3 flex items-center justify-center relative z-10 transition-colors duration-300">
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -229,16 +228,17 @@ export default function App() {
             </div>
 
             <nav className="flex flex-col items-center gap-8 text-center relative z-10 w-full px-6">
-              <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">About</a>
+              <a href="#" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">Home</a>
+              <a href="#about" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">About Us</a>
               <a href="#services" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">Services</a>
-              <a href="#projects" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">Projects</a>
-              <a href="#careers" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">Careers</a>
+              <a href="#projects" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">Gallery</a>
+              <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">Contact Us</a>
               
               <div className="w-full max-w-sm border-t border-white/10 pt-8 mt-4 flex flex-col gap-6">
-                <a href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="w-full flex items-stretch group relative overflow-hidden border border-jac-lime">
+                <a href="tel:18776552248" onClick={() => setIsMobileMenuOpen(false)} className="w-full flex items-stretch group relative overflow-hidden border border-jac-lime">
                   <div className="absolute inset-0 bg-jac-lime w-0 group-hover:w-full transition-all duration-300 ease-out z-0"></div>
                   <div className="flex-1 bg-jac-charcoal group-hover:bg-transparent group-hover:text-jac-charcoal text-jac-lime px-6 py-4 font-bold tracking-wide text-lg flex items-center justify-center relative z-10 transition-colors duration-300 uppercase">
-                    Free Evaluation
+                    Call Today
                   </div>
                   <div className="shrink-0 bg-jac-lime/10 group-hover:bg-transparent border-l border-jac-lime/30 group-hover:border-jac-charcoal group-hover:text-jac-charcoal text-jac-lime px-4 py-4 flex items-center justify-center relative z-10 transition-colors duration-300">
                     <ArrowRight className="w-6 h-6" />
