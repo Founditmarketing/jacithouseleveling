@@ -370,7 +370,7 @@ export default function App() {
       {/* Solid Text Sub-Banner matching Base Layer Color */}
       <section className="bg-jac-green text-white pt-16 pb-16 relative z-30 -mt-1">
         <div className="max-w-[1400px] mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
-          <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl leading-tight">
+          <h2 className="font-display font-bold text-2xl sm:text-3xl md:text-4xl leading-tight">
             Licensed, Insured, Locally Owned &amp; Operated
           </h2>
           <div className="space-y-6">
