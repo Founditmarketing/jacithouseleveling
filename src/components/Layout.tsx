@@ -198,7 +198,7 @@ export default function Layout() {
               <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-jac-lime/5 to-transparent"></div>
             </div>
 
-            <nav className="flex flex-col items-center justify-center gap-8 text-center relative z-10 w-full px-6 pt-12 pb-12 min-h-[calc(100vh-100px)]">
+            <nav className="flex flex-col items-center gap-8 text-center relative z-10 w-full px-6 pt-12 pb-32 min-h-[calc(100vh-100px)]">
               <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">Home</Link>
               <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">About Us</Link>
               
