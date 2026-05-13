@@ -11,7 +11,7 @@ import {
   ChevronDown
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-
+import FloatingContact from './FloatingContact';
 const NavLink = ({ children, to = "#" }: { children: React.ReactNode, to?: string }) => {
   const location = useLocation();
   const isHome = location.pathname === '/';
@@ -339,6 +339,7 @@ export default function Layout() {
           </div>
         </div>
       </footer>
+      <FloatingContact />
     </div>
   );
 }
