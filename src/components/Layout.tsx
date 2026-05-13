@@ -198,16 +198,16 @@ export default function Layout() {
               <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-jac-lime/5 to-transparent"></div>
             </div>
 
-            <nav className="flex flex-col items-center gap-8 text-center relative z-10 w-full px-6 pt-12 pb-32 min-h-[calc(100vh-100px)]">
-              <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">Home</Link>
-              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">About Us</Link>
+            <nav className="flex flex-col items-center gap-6 text-center relative z-10 w-full px-6 pt-12 pb-32 min-h-[calc(100vh-100px)]">
+              <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-2xl text-white uppercase hover:text-jac-lime transition-colors">Home</Link>
+              <Link to="/about" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-2xl text-white uppercase hover:text-jac-lime transition-colors">About Us</Link>
               
               <div className="flex flex-col items-center">
                 <button 
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)} 
-                  className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors flex items-center justify-center gap-2"
+                  className="font-display font-black text-2xl text-white uppercase hover:text-jac-lime transition-colors flex items-center justify-center gap-2"
                 >
-                  Services <ChevronDown className={`w-8 h-8 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
+                  Services <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${isMobileServicesOpen ? 'rotate-180' : ''}`} />
                 </button>
                 <AnimatePresence>
                   {isMobileServicesOpen && (
@@ -216,23 +216,23 @@ export default function Layout() {
                       animate={{ height: 'auto', opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="flex flex-col items-center gap-4 overflow-hidden pt-6"
+                      className="flex flex-col items-center gap-4 overflow-hidden pt-4"
                     >
-                      <Link to="/services/pier-and-beam" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Pier & Beam Repair</Link>
-                      <Link to="/services/foundation-repair" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Foundation Repair</Link>
-                      <Link to="/services/house-leveling" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">House Leveling</Link>
-                      <Link to="/services/press-piers" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Press Piers</Link>
-                      <Link to="/services/slab-repair" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Slab Repair</Link>
-                      <Link to="/services/repair-methods" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Repair Methods</Link>
-                      <Link to="/services/foam-injection" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Foam Injection</Link>
-                      <Link to="/services/drainage-solutions" onClick={() => setIsMobileMenuOpen(false)} className="text-xl text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Drainage Solutions</Link>
+                      <Link to="/services/pier-and-beam" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Pier & Beam Repair</Link>
+                      <Link to="/services/foundation-repair" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Foundation Repair</Link>
+                      <Link to="/services/house-leveling" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">House Leveling</Link>
+                      <Link to="/services/press-piers" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Press Piers</Link>
+                      <Link to="/services/slab-repair" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Slab Repair</Link>
+                      <Link to="/services/repair-methods" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Repair Methods</Link>
+                      <Link to="/services/foam-injection" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Foam Injection</Link>
+                      <Link to="/services/drainage-solutions" onClick={() => setIsMobileMenuOpen(false)} className="text-lg text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide">Drainage Solutions</Link>
                     </motion.div>
                   )}
                 </AnimatePresence>
               </div>
 
-              <Link to="/gallery" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">Gallery</Link>
-              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-4xl text-white uppercase hover:text-jac-lime transition-colors">Contact Us</Link>
+              <Link to="/gallery" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-2xl text-white uppercase hover:text-jac-lime transition-colors">Gallery</Link>
+              <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-2xl text-white uppercase hover:text-jac-lime transition-colors">Contact Us</Link>
               
               <div className="w-full max-w-sm border-t border-white/10 pt-8 mt-4 flex flex-col gap-6">
                 <a href="tel:18776552248" onClick={() => setIsMobileMenuOpen(false)} className="w-full flex items-stretch group relative overflow-hidden border border-jac-lime">
