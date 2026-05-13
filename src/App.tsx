@@ -370,12 +370,12 @@ export default function App() {
       {/* Solid Text Sub-Banner matching Base Layer Color */}
       <section className="bg-jac-green text-white pt-16 pb-16 relative z-30 -mt-1">
         <div className="max-w-[1400px] mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
-          <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl leading-none">
-            Family isn't just a word here.<br />It's who we are.
+          <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl leading-tight">
+            Licensed &bull; Insured &bull; Locally Owned &amp; Operated
           </h2>
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-white/95">
-              When you join Cardinal Civil, you become part of something truly special. Walk into any of our locations and you'll hear the same sentiment: there's a unique spirit that sets us apart. We've built our reputation on two pillars: exceptional dedication to our work and genuine warmth in how we treat each other.
+              At Jac-It House Leveling & Foundation Repair, we take immense pride in serving our neighbors. As a fully licensed and insured, locally owned business, we treat every property like our own. Our deep East Texas roots mean you get honest assessments, dedicated craftsmanship, and a team that stands by its work long after the job is done.
             </p>
           </div>
         </div>
