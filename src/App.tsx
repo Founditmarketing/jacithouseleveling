@@ -273,38 +273,40 @@ export default function App() {
           <div className="absolute inset-0 bg-black/50 mix-blend-multiply"></div>
 
           {/* Complex Multi-Layered Geometric Overlays */}
-          <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
-            {/* Base Layer - Transparent Jac Green */}
-            <motion.div 
-              initial={{ opacity: 0, x: 100, y: 100 }}
-              animate={{ opacity: 1, x: 0, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-              className="absolute inset-0 bg-jac-green/10" style={{ clipPath: 'polygon(calc(100% - 60vw) 100%, 100% calc(100% - 60vw), 100% 100%)' }}
-            ></motion.div>
-
-            {/* Sub-layers container */}
-            <div className="absolute inset-0">
-              {/* Sub Layer 1 */}
+          {!isLoading && (
+            <div className="absolute inset-0 z-10 pointer-events-none overflow-hidden">
+              {/* Base Layer - Transparent Jac Green */}
               <motion.div 
                 initial={{ opacity: 0, x: 100, y: 100 }}
                 animate={{ opacity: 1, x: 0, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-                className="absolute inset-0 bg-jac-green/20" style={{ clipPath: 'polygon(calc(100% - 50vw) 100%, 100% calc(100% - 50vw), 100% 100%)' }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
+                className="absolute inset-0 bg-jac-green/10" style={{ clipPath: 'polygon(calc(100% - 60vw) 100%, 100% calc(100% - 60vw), 100% 100%)' }}
               ></motion.div>
 
-              {/* Sub Layer 2 */}
-              <motion.div 
-                initial={{ opacity: 0, x: 100, y: 100 }}
-                animate={{ opacity: 1, x: 0, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                className="absolute inset-0 bg-jac-green/40" style={{ clipPath: 'polygon(calc(100% - 40vw) 100%, 100% calc(100% - 40vw), 100% 100%)' }}
-              ></motion.div>
+              {/* Sub-layers container */}
+              <div className="absolute inset-0">
+                {/* Sub Layer 1 */}
+                <motion.div 
+                  initial={{ opacity: 0, x: 100, y: 100 }}
+                  animate={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+                  className="absolute inset-0 bg-jac-green/20" style={{ clipPath: 'polygon(calc(100% - 50vw) 100%, 100% calc(100% - 50vw), 100% 100%)' }}
+                ></motion.div>
 
-              {/* Lowest Sub Layer 3 - Solid Jac Green (Corner) */}
-              {/* Touches the bottom completely to match the sub-banner */}
-              <div className="absolute inset-0 bg-jac-green" style={{ clipPath: 'polygon(calc(100% - 30vw) 100%, 100% calc(100% - 30vw), 100% 100%)' }}></div>
+                {/* Sub Layer 2 */}
+                <motion.div 
+                  initial={{ opacity: 0, x: 100, y: 100 }}
+                  animate={{ opacity: 1, x: 0, y: 0 }}
+                  transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                  className="absolute inset-0 bg-jac-green/40" style={{ clipPath: 'polygon(calc(100% - 40vw) 100%, 100% calc(100% - 40vw), 100% 100%)' }}
+                ></motion.div>
+
+                {/* Lowest Sub Layer 3 - Solid Jac Green (Corner) */}
+                {/* Touches the bottom completely to match the sub-banner */}
+                <div className="absolute inset-0 bg-jac-green" style={{ clipPath: 'polygon(calc(100% - 30vw) 100%, 100% calc(100% - 30vw), 100% 100%)' }}></div>
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         {/* BBB Logo Top Right */}
