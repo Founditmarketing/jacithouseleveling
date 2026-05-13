@@ -148,7 +148,6 @@ export default function App() {
           <div className="text-gray-300 hidden sm:block">
             Serving Deep East Texas for 25+ Years
           </div>
-          <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-5 md:h-6 w-auto brightness-0 invert opacity-90" />
           <div className="flex items-center sm:hidden">
             <a href="https://www.facebook.com/profile.php?id=61582509133880" target="_blank" rel="noopener noreferrer" className="hover:text-jac-lime transition-colors">
               <Facebook className="w-4 h-4" />
@@ -353,6 +352,15 @@ export default function App() {
                   <ArrowRight className="w-5 h-5" />
                 </div>
               </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
+              className="mt-12 md:mt-16"
+            >
+              <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-16 sm:h-20 w-auto brightness-0 invert opacity-90 drop-shadow-md" />
             </motion.div>
           </div>
         </div>
@@ -937,10 +945,10 @@ export default function App() {
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">Providing dependable foundation repair and house leveling services across Deep East Texas for over 25 years.</p>
             <div className="flex gap-4 items-center">
-              <a href="#" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-jac-lime hover:border-jac-lime hover:text-jac-charcoal transition-all">
+              <a href="https://www.facebook.com/profile.php?id=61582509133880" target="_blank" rel="noopener noreferrer" className="w-10 h-10 border border-white/10 flex items-center justify-center hover:bg-jac-lime hover:border-jac-lime hover:text-jac-charcoal transition-all">
                 <Facebook className="w-5 h-5" />
               </a>
-              <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-8 w-auto brightness-0 invert opacity-90" />
+              <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-14 sm:h-16 w-auto brightness-0 invert opacity-90" />
             </div>
             
 
