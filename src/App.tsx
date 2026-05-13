@@ -371,7 +371,7 @@ export default function App() {
       <section className="bg-jac-green text-white pt-16 pb-16 relative z-30 -mt-1">
         <div className="max-w-[1400px] mx-auto px-6 grid md:grid-cols-2 gap-12 items-start">
           <h2 className="font-display font-bold text-3xl sm:text-4xl md:text-5xl leading-tight">
-            Licensed &bull; Insured &bull; Locally Owned &amp; Operated
+            Licensed, Insured, Locally Owned &amp; Operated
           </h2>
           <div className="space-y-6">
             <p className="text-lg leading-relaxed text-white/95">
