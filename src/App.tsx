@@ -308,63 +308,67 @@ export default function App() {
         </div>
 
         {/* BBB Logo Top Right */}
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
-          className="absolute top-20 md:top-32 right-2 md:right-12 z-20"
-        >
-          <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-16 sm:h-20 w-auto brightness-0 invert opacity-90 drop-shadow-md" />
-        </motion.div>
+        {!isLoading && (
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
+            className="absolute top-20 md:top-32 right-2 md:right-12 z-20"
+          >
+            <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-16 sm:h-20 w-auto brightness-0 invert opacity-90 drop-shadow-md" />
+          </motion.div>
+        )}
 
         <div className="relative z-20 max-w-[1400px] mx-auto px-6 w-full mt-12 md:mt-0">
-          <div className="max-w-3xl">
+          {!isLoading && (
+            <div className="max-w-3xl">
 
-            <motion.h1
-              initial={{ y: 30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-              className="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-[1.05] tracking-tight"
-            >
-              Built on Heritage and Excellence
-            </motion.h1>
+              <motion.h1
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
+                className="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-[1.05] tracking-tight"
+              >
+                Built on Heritage and Excellence
+              </motion.h1>
 
-            <motion.p
-              initial={{ y: 30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-              className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed font-medium"
-            >
-              Expert foundation repair and house leveling across Deep East Texas. Honest craftsmanship you can trust.
-            </motion.p>
+              <motion.p
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+                className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed font-medium"
+              >
+                Expert foundation repair and house leveling across Deep East Texas. Honest craftsmanship you can trust.
+              </motion.p>
 
-            <motion.div
-              initial={{ y: 30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-              className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6 max-w-2xl"
-            >
-              <a href="#projects" className="flex w-full sm:w-auto items-stretch group relative overflow-hidden border border-white">
-                <div className="absolute inset-0 bg-jac-lime w-0 group-hover:w-full transition-all duration-300 ease-out z-0"></div>
-                <div className="flex-1 bg-black/30 group-hover:bg-transparent group-hover:text-jac-charcoal backdrop-blur-sm text-white px-6 py-4 font-bold tracking-wide text-sm flex items-center justify-center border-r-0 relative z-10 transition-all duration-300 whitespace-nowrap">
-                  Explore Our Work
-                </div>
-                <div className="shrink-0 bg-black/30 group-hover:bg-transparent group-hover:text-jac-charcoal backdrop-blur-sm text-white px-4 py-4 flex items-center justify-center border-l border-white relative z-10 transition-all duration-300">
-                  <ArrowRight className="w-5 h-5" />
-                </div>
-              </a>
+              <motion.div
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
+                className="mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6 max-w-2xl"
+              >
+                <a href="#projects" className="flex w-full sm:w-auto items-stretch group relative overflow-hidden border border-white">
+                  <div className="absolute inset-0 bg-jac-lime w-0 group-hover:w-full transition-all duration-300 ease-out z-0"></div>
+                  <div className="flex-1 bg-black/30 group-hover:bg-transparent group-hover:text-jac-charcoal backdrop-blur-sm text-white px-6 py-4 font-bold tracking-wide text-sm flex items-center justify-center border-r-0 relative z-10 transition-all duration-300 whitespace-nowrap">
+                    Explore Our Work
+                  </div>
+                  <div className="shrink-0 bg-black/30 group-hover:bg-transparent group-hover:text-jac-charcoal backdrop-blur-sm text-white px-4 py-4 flex items-center justify-center border-l border-white relative z-10 transition-all duration-300">
+                    <ArrowRight className="w-5 h-5" />
+                  </div>
+                </a>
 
-              <a href="#careers" className="flex w-full sm:w-auto items-stretch group relative overflow-hidden border border-transparent hover:border-gray-200">
-                <div className="absolute inset-0 bg-jac-green w-0 group-hover:w-full transition-all duration-300 ease-out z-0"></div>
-                <div className="flex-1 bg-white group-hover:bg-transparent group-hover:text-white text-jac-charcoal px-6 py-4 font-bold tracking-wide text-sm flex items-center justify-center relative z-10 transition-all duration-300 whitespace-nowrap">
-                  Join The Team
-                </div>
-                <div className="shrink-0 bg-white group-hover:bg-transparent group-hover:text-white text-jac-charcoal px-4 py-4 flex items-center justify-center border-l border-gray-200 relative z-10 transition-all duration-300">
-                  <ArrowRight className="w-5 h-5" />
-                </div>
-              </a>
-            </motion.div>
-          </div>
+                <a href="#careers" className="flex w-full sm:w-auto items-stretch group relative overflow-hidden border border-transparent hover:border-gray-200">
+                  <div className="absolute inset-0 bg-jac-green w-0 group-hover:w-full transition-all duration-300 ease-out z-0"></div>
+                  <div className="flex-1 bg-white group-hover:bg-transparent group-hover:text-white text-jac-charcoal px-6 py-4 font-bold tracking-wide text-sm flex items-center justify-center relative z-10 transition-all duration-300 whitespace-nowrap">
+                    Join The Team
+                  </div>
+                  <div className="shrink-0 bg-white group-hover:bg-transparent group-hover:text-white text-jac-charcoal px-4 py-4 flex items-center justify-center border-l border-gray-200 relative z-10 transition-all duration-300">
+                    <ArrowRight className="w-5 h-5" />
+                  </div>
+                </a>
+              </motion.div>
+            </div>
+          )}
         </div>
 
         {/* Scroll Down placed at bottom right over geometric pattern */}
