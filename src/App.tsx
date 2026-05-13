@@ -324,7 +324,7 @@ export default function App() {
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl leading-relaxed font-medium"
             >
-              Premier foundation repair and house leveling in Deep East Texas. Securing your home's structural integrity with honest, expert craftsmanship.
+              Expert foundation repair and house leveling across Deep East Texas. Honest craftsmanship you can trust.
             </motion.p>
 
             <motion.div
@@ -358,7 +358,7 @@ export default function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-              className="mt-12 md:mt-16"
+              className="mt-8 md:mt-10"
             >
               <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-16 sm:h-20 w-auto brightness-0 invert opacity-90 drop-shadow-md" />
             </motion.div>
