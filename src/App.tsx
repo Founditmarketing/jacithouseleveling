@@ -309,10 +309,19 @@ export default function App() {
 
         <div className="relative z-20 max-w-[1400px] mx-auto px-6 w-full mt-12 md:mt-0">
           <div className="max-w-3xl">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, ease: "easeOut" }}
+              className="mb-8"
+            >
+              <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-16 sm:h-20 w-auto brightness-0 invert opacity-90 drop-shadow-md" />
+            </motion.div>
+
             <motion.h1
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
+              transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
               className="font-display text-4xl sm:text-5xl md:text-7xl font-bold text-white leading-[1.05] tracking-tight"
             >
               Built on Heritage and Excellence
@@ -352,15 +361,6 @@ export default function App() {
                   <ArrowRight className="w-5 h-5" />
                 </div>
               </a>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-              className="mt-8 md:mt-10"
-            >
-              <img src="/bbblogo2.png" alt="BBB Accredited Business" className="h-16 sm:h-20 w-auto brightness-0 invert opacity-90 drop-shadow-md" />
             </motion.div>
           </div>
         </div>
