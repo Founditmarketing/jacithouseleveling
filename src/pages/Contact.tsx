@@ -22,7 +22,7 @@ import {
   X
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import LoadingScreen from './components/LoadingScreen';
+import LoadingScreen from '../components/LoadingScreen';
 
 const NavLink = ({ children, href = "#" }: { children: React.ReactNode, href?: string }) => (
   <a href={href} className="text-sm font-bold tracking-wide uppercase hover:text-jac-green transition-colors flex items-center gap-1 group">
@@ -45,6 +45,34 @@ const FooterBrandName = () => (
 );
 
 export default function Contact({ isLoading }: { isLoading?: boolean }) {
+  const [formData, setFormData] = useState({ fname: '', lname: '', email: '', phone: '', message: '' });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData(prev => ({ ...prev, [e.target.id]: e.target.value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+    setErrorMessage('');
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || 'Failed to send message');
+      setStatus('success');
+      setFormData({ fname: '', lname: '', email: '', phone: '', message: '' });
+    } catch (error: any) {
+      console.error(error);
+      setStatus('error');
+      setErrorMessage(error.message || 'An error occurred while sending your message. Please try again.');
+    }
+  };
   return (
     <>
       {/* Contact Hero */}
@@ -179,33 +207,35 @@ export default function Contact({ isLoading }: { isLoading?: boolean }) {
           {/* Form - Right Side */}
           <div className="relative z-20 flex flex-col justify-center lg:pl-8">
             <h2 className="font-display font-black text-3xl text-white uppercase mb-8 relative z-10">Request an Estimate</h2>
-            <form className="space-y-4 relative z-10">
+            <form className="space-y-4 relative z-10" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="relative">
-                  <input type="text" id="fname" placeholder=" " className="peer w-full bg-white/5 border-2 border-white/10 focus:border-jac-lime focus:bg-white/10 rounded-none pt-6 pb-2 px-4 focus:outline-none transition-all duration-300 text-white font-bold" />
+                  <input type="text" id="fname" value={formData.fname} onChange={handleChange} placeholder=" " required className="peer w-full bg-white/5 border-2 border-white/10 focus:border-jac-lime focus:bg-white/10 rounded-none pt-6 pb-2 px-4 focus:outline-none transition-all duration-300 text-white font-bold" />
                   <label htmlFor="fname" className="absolute left-4 top-4 text-xs font-bold uppercase tracking-wider text-gray-400 transition-all duration-300 peer-focus:text-[10px] peer-focus:-translate-y-2 peer-focus:text-jac-lime peer-[:not(:placeholder-shown)]:text-[10px] peer-[:not(:placeholder-shown)]:-translate-y-2 pointer-events-none">First Name *</label>
                 </div>
                 <div className="relative">
-                  <input type="text" id="lname" placeholder=" " className="peer w-full bg-white/5 border-2 border-white/10 focus:border-jac-lime focus:bg-white/10 rounded-none pt-6 pb-2 px-4 focus:outline-none transition-all duration-300 text-white font-bold" />
+                  <input type="text" id="lname" value={formData.lname} onChange={handleChange} placeholder=" " required className="peer w-full bg-white/5 border-2 border-white/10 focus:border-jac-lime focus:bg-white/10 rounded-none pt-6 pb-2 px-4 focus:outline-none transition-all duration-300 text-white font-bold" />
                   <label htmlFor="lname" className="absolute left-4 top-4 text-xs font-bold uppercase tracking-wider text-gray-400 transition-all duration-300 peer-focus:text-[10px] peer-focus:-translate-y-2 peer-focus:text-jac-lime peer-[:not(:placeholder-shown)]:text-[10px] peer-[:not(:placeholder-shown)]:-translate-y-2 pointer-events-none">Last Name *</label>
                 </div>
               </div>
               <div className="relative">
-                <input type="email" id="email" placeholder=" " className="peer w-full bg-white/5 border-2 border-white/10 focus:border-jac-lime focus:bg-white/10 rounded-none pt-6 pb-2 px-4 focus:outline-none transition-all duration-300 text-white font-bold" />
+                <input type="email" id="email" value={formData.email} onChange={handleChange} placeholder=" " required className="peer w-full bg-white/5 border-2 border-white/10 focus:border-jac-lime focus:bg-white/10 rounded-none pt-6 pb-2 px-4 focus:outline-none transition-all duration-300 text-white font-bold" />
                 <label htmlFor="email" className="absolute left-4 top-4 text-xs font-bold uppercase tracking-wider text-gray-400 transition-all duration-300 peer-focus:text-[10px] peer-focus:-translate-y-2 peer-focus:text-jac-lime peer-[:not(:placeholder-shown)]:text-[10px] peer-[:not(:placeholder-shown)]:-translate-y-2 pointer-events-none">Email Address *</label>
               </div>
               <div className="relative">
-                <input type="tel" id="phone" placeholder=" " className="peer w-full bg-white/5 border-2 border-white/10 focus:border-jac-lime focus:bg-white/10 rounded-none pt-6 pb-2 px-4 focus:outline-none transition-all duration-300 text-white font-bold" />
+                <input type="tel" id="phone" value={formData.phone} onChange={handleChange} placeholder=" " required className="peer w-full bg-white/5 border-2 border-white/10 focus:border-jac-lime focus:bg-white/10 rounded-none pt-6 pb-2 px-4 focus:outline-none transition-all duration-300 text-white font-bold" />
                 <label htmlFor="phone" className="absolute left-4 top-4 text-xs font-bold uppercase tracking-wider text-gray-400 transition-all duration-300 peer-focus:text-[10px] peer-focus:-translate-y-2 peer-focus:text-jac-lime peer-[:not(:placeholder-shown)]:text-[10px] peer-[:not(:placeholder-shown)]:-translate-y-2 pointer-events-none">Phone Number *</label>
               </div>
               <div className="relative">
-                <textarea id="message" rows={4} placeholder=" " className="peer w-full bg-white/5 border-2 border-white/10 focus:border-jac-lime focus:bg-white/10 rounded-none pt-6 pb-2 px-4 focus:outline-none transition-all duration-300 text-white font-bold resize-none"></textarea>
+                <textarea id="message" value={formData.message} onChange={handleChange} rows={4} placeholder=" " required className="peer w-full bg-white/5 border-2 border-white/10 focus:border-jac-lime focus:bg-white/10 rounded-none pt-6 pb-2 px-4 focus:outline-none transition-all duration-300 text-white font-bold resize-none"></textarea>
                 <label htmlFor="message" className="absolute left-4 top-4 text-xs font-bold uppercase tracking-wider text-gray-400 transition-all duration-300 peer-focus:text-[10px] peer-focus:-translate-y-2 peer-focus:text-jac-lime peer-[:not(:placeholder-shown)]:text-[10px] peer-[:not(:placeholder-shown)]:-translate-y-2 pointer-events-none">How can we help?</label>
               </div>
-              <button type="submit" className="w-full flex items-stretch group relative overflow-hidden border border-jac-lime mt-6">
+                            {status === 'success' && <div className="text-jac-lime font-bold text-center mt-4">Your message was sent successfully! We'll be in touch soon.</div>}
+              {status === 'error' && <div className="text-red-500 font-bold text-center mt-4">{errorMessage}</div>}
+              <button className="w-full flex items-stretch group relative overflow-hidden border border-jac-lime mt-6">
                 <div className="absolute inset-0 bg-jac-lime w-0 group-hover:w-full transition-all duration-300 ease-out z-0"></div>
                 <div className="w-full text-jac-lime group-hover:text-jac-charcoal px-8 py-4 font-bold tracking-wide text-lg flex items-center justify-center relative z-10 transition-colors duration-300 uppercase">
-                  Submit Request
+                  {status === 'loading' ? 'Sending...' : 'Submit Request'}
                 </div>
                 <div className="border-l border-jac-lime/30 group-hover:border-transparent group-hover:text-jac-charcoal px-6 flex items-center justify-center relative z-10 transition-colors duration-300 text-jac-lime">
                   <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />

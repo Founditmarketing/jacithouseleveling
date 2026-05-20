@@ -1,0 +1,46 @@
+# Jac-It House Leveling & Foundation Repair
+
+> Providing dependable foundation repair and house leveling services across Deep East Texas for over 25 years.
+
+## About Us
+Jac-It House Leveling & Foundation Repair is a professional service providing foundation solutions in the Deep East Texas region. With over 25 years of experience, we specialize in repairing and securing properties with lasting results. We are a BBB Accredited Business.
+
+## Services
+- Pier & Beam Repair
+- Foundation Repair
+- House Leveling
+- Press Piers
+- Slab Repair
+- Foam Injection
+- Drainage Solutions
+
+## Service Areas
+We serve the Deep East Texas region, including:
+- Tyler
+- Lufkin
+- Longview
+- Livingston
+- Henderson
+- Nacogdoches
+- Huntsville
+- And surrounding communities
+
+## Contact Information
+- **Toll-Free Phone**: [1-877-655-2248](tel:18776552248) (1-877-65-JACIT)
+- **Email**: [james@jac-itfoundationrepair.com](mailto:james@jac-itfoundationrepair.com)
+- **Business Hours**: Monday - Friday, 8:00 AM - 6:00 PM
+- **Facebook**: [Jac-It Foundation Repair](https://www.facebook.com/profile.php?id=61582509133880)
+
+## Navigation
+- [Home](/)
+- [About Us](/about)
+- [Gallery](/gallery)
+- [Contact Us](/contact)
+- [Pier & Beam Repair](/services/pier-and-beam)
+- [Foundation Repair](/services/foundation-repair)
+- [Slab Repair](/services/slab-repair)
+- [House Leveling](/services/house-leveling)
+- [Press Piers](/services/press-piers)
+- [Repair Methods](/services/repair-methods)
+- [Foam Injection](/services/foam-injection)
+- [Drainage Solutions](/services/drainage-solutions)

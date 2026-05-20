@@ -3,6 +3,31 @@ import { MessageSquare, Phone, X, Send } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function FloatingContact() {
+  const [formData, setFormData] = useState({ fname: '', lname: 'Floating', email: '', phone: '', message: '' });
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('loading');
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      if (!response.ok) throw new Error('Failed');
+      setStatus('success');
+      setTimeout(() => { setIsOpen(false); setStatus('idle'); }, 2000);
+      setFormData({ fname: '', lname: 'Floating', email: '', phone: '', message: '' });
+    } catch (error) {
+      console.error(error);
+      setStatus('error');
+    }
+  };
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -50,18 +75,18 @@ export default function FloatingContact() {
                 <MessageSquare className="w-4 h-4 text-jac-green" />
                 Send a Quick Message
               </h4>
-              <form className="space-y-3" onSubmit={(e) => { e.preventDefault(); setIsOpen(false); alert('Message sent successfully!'); }}>
+              <form className="space-y-3" onSubmit={handleSubmit}>
                 <div>
-                  <input type="text" placeholder="Full Name *" className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-jac-green focus:ring-1 focus:ring-jac-green text-sm" required />
+                  <input type="text" placeholder="Full Name *" name="fname" value={formData.fname} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-jac-green focus:ring-1 focus:ring-jac-green text-sm" required />
                 </div>
                 <div>
-                  <input type="tel" placeholder="Phone Number *" className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-jac-green focus:ring-1 focus:ring-jac-green text-sm" required />
+                  <input type="tel" placeholder="Phone Number *" name="phone" value={formData.phone} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-jac-green focus:ring-1 focus:ring-jac-green text-sm" required />
                 </div>
                 <div>
-                  <input type="email" placeholder="Email Address *" className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-jac-green focus:ring-1 focus:ring-jac-green text-sm" required />
+                  <input type="email" placeholder="Email Address *" name="email" value={formData.email} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-jac-green focus:ring-1 focus:ring-jac-green text-sm" required />
                 </div>
                 <div>
-                  <select className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-jac-green focus:ring-1 focus:ring-jac-green text-sm bg-white" required defaultValue="">
+                  <select name="message" value={formData.message} onChange={handleChange} className="w-full px-3 py-2 border border-gray-300 rounded focus:outline-none focus:border-jac-green focus:ring-1 focus:ring-jac-green text-sm bg-white" required >
                     <option value="" disabled>Select a Service *</option>
                     <option value="pier-and-beam">Pier & Beam Repair</option>
                     <option value="foundation-repair">Foundation Repair</option>
@@ -75,6 +100,8 @@ export default function FloatingContact() {
                     <option value="other">Other / Not Sure</option>
                   </select>
                 </div>
+                                {status === 'success' && <div className="text-jac-green font-bold text-center text-xs">Sent successfully!</div>}
+                {status === 'error' && <div className="text-red-500 font-bold text-center text-xs">Error sending message.</div>}
                 <button type="submit" className="w-full bg-jac-green text-white font-bold py-2.5 rounded flex items-center justify-center gap-2 hover:bg-jac-charcoal transition-colors text-sm mt-2">
                   Send Message
                   <Send className="w-4 h-4" />
