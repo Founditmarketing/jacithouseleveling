@@ -121,12 +121,15 @@ export default function Gallery({ isLoading }: { isLoading?: boolean }) {
         <div className="max-w-4xl mx-auto px-6 relative z-10 text-center">
           <h2 className="font-display font-black text-4xl md:text-5xl text-white uppercase mb-6">Ready to Start Your Project?</h2>
           <p className="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Contact us today for a free evaluation and professional structural assessment.</p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
             <Link to="/contact" className="w-full sm:w-auto bg-jac-lime text-jac-charcoal px-8 py-4 font-bold uppercase tracking-wider hover:bg-white transition-colors flex items-center justify-center gap-2">
               Get a Free Quote <ArrowRight className="w-5 h-5" />
             </Link>
             <a href="tel:18776552248" className="w-full sm:w-auto border-2 border-white text-white px-8 py-4 font-bold uppercase tracking-wider hover:bg-white hover:text-jac-charcoal transition-colors text-center">
               1-877-65-JACIT
+            </a>
+            <a href="tel:14303526085" className="w-full sm:w-auto border-2 border-white text-white px-8 py-4 font-bold uppercase tracking-wider hover:bg-white hover:text-jac-charcoal transition-colors text-center">
+              1-430-352-6085
             </a>
           </div>
         </div>

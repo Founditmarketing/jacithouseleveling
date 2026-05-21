@@ -86,7 +86,10 @@ export default function Layout() {
       <div className="bg-jac-charcoal text-white text-[10px] sm:text-xs font-bold tracking-widest uppercase h-10 px-6 lg:px-12 flex justify-between items-center relative z-50 shrink-0">
         <div className="flex items-center gap-6">
           <a href="tel:18776552248" className="flex items-center gap-2 hover:text-jac-lime transition-colors">
-            <Phone className="w-3 h-3 text-jac-lime" /> 1-877-655-2248
+            <Phone className="w-3 h-3 text-jac-lime" /> 1-877-65-JACIT
+          </a>
+          <a href="tel:14303526085" className="flex items-center gap-2 hover:text-jac-lime transition-colors hidden sm:flex">
+            <Phone className="w-3 h-3 text-jac-lime" /> 1-430-352-6085
           </a>
           <a href="mailto:james@jac-itfoundationrepair.com" className="items-center gap-2 hover:text-jac-lime transition-colors hidden md:flex">
             <Mail className="w-3 h-3 text-jac-lime" /> james@jac-itfoundationrepair.com
@@ -246,9 +249,14 @@ export default function Layout() {
                 </a>
 
                 <div className="flex flex-col items-center gap-4 text-gray-300 mt-4">
-                  <a href="tel:18776552248" className="flex items-center gap-2 text-xl font-medium text-white hover:text-jac-lime transition-colors">
-                    <Phone className="w-5 h-5 text-jac-lime" /> 1-877-655-2248
-                  </a>
+                  <div className="flex flex-col items-center gap-3">
+                    <a href="tel:18776552248" className="flex items-center gap-2 text-xl font-medium text-white hover:text-jac-lime transition-colors">
+                      <Phone className="w-5 h-5 text-jac-lime" /> 1-877-65-JACIT
+                    </a>
+                    <a href="tel:14303526085" className="flex items-center gap-2 text-xl font-medium text-white hover:text-jac-lime transition-colors">
+                      <Phone className="w-5 h-5 text-jac-lime" /> 1-430-352-6085
+                    </a>
+                  </div>
                   <a href="mailto:james@jac-itfoundationrepair.com" className="text-sm font-medium hover:text-jac-lime transition-colors">
                     james@jac-itfoundationrepair.com
                   </a>
@@ -318,7 +326,11 @@ export default function Layout() {
               <div className="w-8 h-[2px] bg-jac-lime"></div>
             </div>
             <ul className="space-y-4 text-sm text-gray-400 font-medium">
-              <li><a href="tel:18776552248" className="hover:text-jac-lime transition-colors">1-877-65-JACIT</a></li>
+              <li>
+                <a href="tel:18776552248" className="hover:text-jac-lime transition-colors block">1-877-65-JACIT</a>
+                <a href="tel:18776552248" className="hover:text-jac-lime transition-colors block text-xs mt-1 text-gray-500">1-877-655-2248</a>
+              </li>
+              <li><a href="tel:14303526085" className="hover:text-jac-lime transition-colors">1-430-352-6085</a></li>
               <li><a href="mailto:james@jac-itfoundationrepair.com" className="hover:text-jac-lime transition-colors">james@jac-itfoundationrepair.com</a></li>
               <li>Deep East Texas Region</li>
               <li>Mon-Fri: 8:00 AM - 6:00 PM</li>

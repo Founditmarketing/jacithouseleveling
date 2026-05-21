@@ -218,10 +218,14 @@ export default function About({ isLoading }: { isLoading?: boolean }) {
             Level up your home—<br className="hidden md:block"/>Call <BrandName /> today!
           </h2>
           <div className="flex flex-col items-center gap-6 justify-center text-white mt-10">
-            <div className="flex flex-col items-center gap-1">
+            <div className="flex flex-col items-center gap-2">
               <a href="tel:18776552248" className="text-3xl md:text-5xl font-bold hover:text-jac-lime transition-colors tracking-wide flex items-center gap-4">
                 <Phone className="w-8 h-8 md:w-10 md:h-10 text-jac-lime" />
                 1-877-65-JACIT
+              </a>
+              <a href="tel:14303526085" className="text-3xl md:text-5xl font-bold hover:text-jac-lime transition-colors tracking-wide flex items-center gap-4 mt-2">
+                <Phone className="w-8 h-8 md:w-10 md:h-10 text-jac-lime opacity-0 md:block hidden" />
+                1-430-352-6085
               </a>
             </div>
 

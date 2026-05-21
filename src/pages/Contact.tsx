@@ -121,8 +121,11 @@ export default function Contact({ isLoading }: { isLoading?: boolean }) {
                 <div className="flex items-start gap-4">
                   <Phone className="w-6 h-6 text-jac-lime shrink-0 mt-1" />
                   <div>
-                    <h5 className="font-bold text-white uppercase tracking-wide text-sm mb-1">Toll-Free</h5>
-                    <a href="tel:18776552248" className="text-xl font-medium hover:text-jac-lime transition-colors">1-877-65-JACIT (1-877-655-2248)</a>
+                    <h5 className="font-bold text-white uppercase tracking-wide text-sm mb-1">Phone</h5>
+                    <div className="flex flex-col gap-1">
+                      <a href="tel:18776552248" className="text-xl font-medium hover:text-jac-lime transition-colors block">1-877-65-JACIT</a>
+                      <a href="tel:14303526085" className="text-xl font-medium hover:text-jac-lime transition-colors block">1-430-352-6085</a>
+                    </div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">

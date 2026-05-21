@@ -63,10 +63,16 @@ export default function FloatingContact() {
             {/* Call Now Section */}
             <div className="bg-jac-charcoal p-6 text-center border-b-[4px] border-jac-lime">
               <h3 className="text-white font-display font-bold text-xl uppercase tracking-wide mb-2">Need Help Now?</h3>
-              <a href="tel:18776552248" className="inline-flex items-center justify-center gap-2 bg-jac-lime text-jac-charcoal px-6 py-3 rounded-full font-bold hover:bg-white transition-colors w-full">
-                <Phone className="w-5 h-5 fill-current" />
-                1-877-65-JACIT
-              </a>
+              <div className="flex flex-col gap-2">
+                <a href="tel:18776552248" className="inline-flex items-center justify-center gap-2 bg-jac-lime text-jac-charcoal px-6 py-3 rounded-full font-bold hover:bg-white transition-colors w-full">
+                  <Phone className="w-5 h-5 fill-current" />
+                  1-877-65-JACIT
+                </a>
+                <a href="tel:14303526085" className="inline-flex items-center justify-center gap-2 bg-jac-lime text-jac-charcoal px-6 py-3 rounded-full font-bold hover:bg-white transition-colors w-full">
+                  <Phone className="w-5 h-5 fill-current" />
+                  1-430-352-6085
+                </a>
+              </div>
             </div>
 
             {/* Quick Contact Form */}
