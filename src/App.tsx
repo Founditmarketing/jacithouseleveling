@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
@@ -65,6 +66,7 @@ export default function App() {
     <Router>
       <ScrollToTop />
       <AppContent />
+      <Analytics />
     </Router>
   );
 }
