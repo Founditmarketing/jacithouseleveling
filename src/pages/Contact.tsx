@@ -58,10 +58,15 @@ export default function Contact({ isLoading }: { isLoading?: boolean }) {
     setStatus('loading');
     setErrorMessage('');
     try {
-      const response = await fetch('/api/send', {
+      const response = await fetch('https://www.founditos.com/api/contact-form/415c5511-d4c8-44cb-b6f8-0eda857da922', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          name: `${formData.fname} ${formData.lname}`.trim(),
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        }),
       });
       const data = await response.json();
       if (!response.ok) throw new Error(data.error || 'Failed to send message');
