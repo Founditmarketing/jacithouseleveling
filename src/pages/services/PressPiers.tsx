@@ -1,5 +1,6 @@
 import React from 'react';
 import ServiceTemplate from '../../components/ServiceTemplate';
+import PageSEO from '../../components/PageSEO';
 
 const faqs = [
   {
@@ -30,7 +31,13 @@ const faqs = [
 
 export default function PressPiers({ isLoading }: { isLoading?: boolean }) {
   return (
-    <ServiceTemplate
+    <>
+      <PageSEO
+        title="Press Piers | Jac-It House Leveling & Foundation Repair"
+        description="Heavy-duty steel press pier support systems from Jac-It House Leveling & Foundation Repair, built to stabilize homes across Deep East Texas."
+        path="/services/press-piers"
+      />
+      <ServiceTemplate
       isLoading={isLoading}
       title="Press Piers"
       subtitle="Heavy-Duty Steel Support Systems."
@@ -57,6 +64,7 @@ export default function PressPiers({ isLoading }: { isLoading?: boolean }) {
           </div>
         </>
       }
-    />
+      />
+    </>
   );
 }

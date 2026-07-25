@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.jac-itfoundationrepair.com/sitemap.xml

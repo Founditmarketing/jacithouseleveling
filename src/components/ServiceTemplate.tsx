@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ArrowRight, Phone } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import JsonLd from './JsonLd';
+
+const SITE_URL = 'https://www.jac-itfoundationrepair.com';
 
 const BrandName = () => (
   <span className="inline-flex items-baseline font-normal tracking-normal lowercase">
@@ -33,7 +36,7 @@ const defaultFaqs = [
   },
   {
     question: "How can I schedule service or ask questions?",
-    answer: "Call 1-877-65-JACIT or email james@jacitfoundationrepair.com. Our team will answer questions and schedule your inspection promptly."
+    answer: "Call 1-877-65-JACIT or email james@jac-itfoundationrepair.com. Our team will answer questions and schedule your inspection promptly."
   }
 ];
 
@@ -50,6 +53,37 @@ interface ServiceTemplateProps {
 export default function ServiceTemplate({ isLoading, title, subtitle, image, heroImage, content, faqs }: ServiceTemplateProps) {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
   const displayFaqs = faqs || defaultFaqs;
+  const location = useLocation();
+  const pageUrl = `${SITE_URL}${location.pathname}`;
+
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": title,
+    "serviceType": title,
+    "description": subtitle || `${title} services from Jac-It House Leveling & Foundation Repair`,
+    "url": pageUrl,
+    "areaServed": "Deep East Texas",
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Jac-It House Leveling & Foundation Repair",
+      "telephone": "+1-877-655-2248",
+      "url": SITE_URL
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": displayFaqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
@@ -57,6 +91,8 @@ export default function ServiceTemplate({ isLoading, title, subtitle, image, her
 
   return (
     <>
+      <JsonLd id="service" data={serviceSchema} />
+      <JsonLd id="service-faq" data={faqSchema} />
       {/* Hero Section */}
       <section className="relative pt-40 pb-20 md:pt-48 md:pb-28 bg-jac-dark overflow-hidden">
         <div className="absolute inset-0 z-0">

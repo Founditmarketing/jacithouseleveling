@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowRight, Maximize, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import PageSEO from '../components/PageSEO';
 
 const galleryItems = [
   { src: "/jacitgallery.jpeg", title: "Wall Lifting", desc: "Hydraulic lifting of exterior brick foundation." },
@@ -20,6 +21,11 @@ export default function Gallery({ isLoading }: { isLoading?: boolean }) {
 
   return (
     <>
+      <PageSEO
+        title="Project Gallery | Jac-It House Leveling & Foundation Repair"
+        description="Browse real foundation repair, house leveling, and press pier projects completed by Jac-It House Leveling & Foundation Repair across Deep East Texas."
+        path="/gallery"
+      />
       {/* Hero Section */}
       <section className="relative pt-40 pb-20 md:pt-48 md:pb-28 bg-jac-dark overflow-hidden">
         <div className="absolute inset-0 z-0">

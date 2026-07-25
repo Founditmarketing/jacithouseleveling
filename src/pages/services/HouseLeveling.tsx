@@ -1,5 +1,6 @@
 import React from 'react';
 import ServiceTemplate from '../../components/ServiceTemplate';
+import PageSEO from '../../components/PageSEO';
 
 const faqs = [
   {
@@ -30,7 +31,13 @@ const faqs = [
 
 export default function HouseLeveling({ isLoading }: { isLoading?: boolean }) {
   return (
-    <ServiceTemplate
+    <>
+      <PageSEO
+        title="House Leveling | Jac-It House Leveling & Foundation Repair"
+        description="Restore balance and stability to your home with professional house leveling from Jac-It House Leveling & Foundation Repair in Deep East Texas."
+        path="/services/house-leveling"
+      />
+      <ServiceTemplate
       isLoading={isLoading}
       title="House Leveling"
       subtitle="Restoring Balance and Stability."
@@ -57,6 +64,7 @@ export default function HouseLeveling({ isLoading }: { isLoading?: boolean }) {
           </div>
         </>
       }
-    />
+      />
+    </>
   );
 }

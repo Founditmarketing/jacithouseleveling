@@ -1,9 +1,16 @@
 import React from 'react';
 import ServiceTemplate from '../../components/ServiceTemplate';
+import PageSEO from '../../components/PageSEO';
 
 export default function CommercialPrep({ isLoading }: { isLoading?: boolean }) {
   return (
-    <ServiceTemplate
+    <>
+      <PageSEO
+        title="Commercial Prep | Jac-It House Leveling & Foundation Repair"
+        description="Heavy-duty commercial foundation engineering and site prep from Jac-It House Leveling & Foundation Repair, serving Deep East Texas for over 25 years."
+        path="/services/commercial-prep"
+      />
+      <ServiceTemplate
       isLoading={isLoading}
       title="Commercial Prep"
       subtitle="Heavy-Duty Foundation Engineering."
@@ -18,6 +25,7 @@ export default function CommercialPrep({ isLoading }: { isLoading?: boolean }) {
           </p>
         </>
       }
-    />
+      />
+    </>
   );
 }

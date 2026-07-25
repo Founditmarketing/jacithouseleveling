@@ -12,6 +12,31 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import FloatingContact from './FloatingContact';
+import JsonLd from './JsonLd';
+
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Jac-It House Leveling & Foundation Repair",
+  "image": "https://www.jac-itfoundationrepair.com/jacitlogohorizontal.png",
+  "url": "https://www.jac-itfoundationrepair.com/",
+  "telephone": "+1-877-655-2248",
+  "email": "james@jac-itfoundationrepair.com",
+  "priceRange": "$$",
+  "areaServed": ["Tyler, TX", "Lufkin, TX", "Longview, TX", "Livingston, TX", "Henderson, TX"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "TX",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
+  "sameAs": ["https://www.facebook.com/profile.php?id=61582509133880"]
+};
 const NavLink = ({ children, to = "#" }: { children: React.ReactNode, to?: string }) => {
   const location = useLocation();
   const isHome = location.pathname === '/';
@@ -82,6 +107,7 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen bg-white overflow-x-hidden flex flex-col">
+      <JsonLd id="local-business" data={localBusinessSchema} />
       {/* Top Bar */}
       <div className="bg-jac-charcoal text-white text-[10px] sm:text-xs font-bold tracking-widest uppercase h-10 px-6 lg:px-12 flex justify-between items-center relative z-50 shrink-0">
         <div className="flex items-center gap-6">

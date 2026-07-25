@@ -1,9 +1,16 @@
 import React from 'react';
 import ServiceTemplate from '../../components/ServiceTemplate';
+import PageSEO from '../../components/PageSEO';
 
 export default function RootBarriers({ isLoading }: { isLoading?: boolean }) {
   return (
-    <ServiceTemplate
+    <>
+      <PageSEO
+        title="Root Barriers | Jac-It House Leveling & Foundation Repair"
+        description="Protect your slab from aggressive tree roots with professional root barrier installation from Jac-It House Leveling & Foundation Repair in Deep East Texas."
+        path="/services/root-barriers"
+      />
+      <ServiceTemplate
       isLoading={isLoading}
       title="Root Barriers"
       subtitle="Defending Your Slab Against Aggressive Roots."
@@ -18,6 +25,7 @@ export default function RootBarriers({ isLoading }: { isLoading?: boolean }) {
           </p>
         </>
       }
-    />
+      />
+    </>
   );
 }

@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import LoadingScreen from '../components/LoadingScreen';
+import PageSEO from '../components/PageSEO';
 
 const NavLink = ({ children, href = "#" }: { children: React.ReactNode, href?: string }) => (
   <a href={href} className="text-sm font-bold tracking-wide uppercase hover:text-jac-green transition-colors flex items-center gap-1 group">
@@ -143,7 +144,11 @@ export default function Home({ isLoading }: { isLoading: boolean }) {
 
   return (
     <>
-
+      <PageSEO
+        title="Jac-It House Leveling & Foundation Repair"
+        description="Providing dependable foundation repair and house leveling services across Deep East Texas for over 25 years."
+        path="/"
+      />
 
       {/* Hero Section */}
       <section className="relative min-h-[90vh] md:min-h-[80vh] flex items-center bg-jac-dark overflow-hidden pt-28 pb-12 md:pt-24 md:pb-16">

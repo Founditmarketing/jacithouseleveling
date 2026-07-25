@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import LoadingScreen from '../components/LoadingScreen';
+import PageSEO from '../components/PageSEO';
 
 const NavLink = ({ children, href = "#" }: { children: React.ReactNode, href?: string }) => (
   <a href={href} className="text-sm font-bold tracking-wide uppercase hover:text-jac-green transition-colors flex items-center gap-1 group">
@@ -80,6 +81,11 @@ export default function Contact({ isLoading }: { isLoading?: boolean }) {
   };
   return (
     <>
+      <PageSEO
+        title="Contact Us | Jac-It House Leveling & Foundation Repair"
+        description="Schedule a free foundation inspection with Jac-It House Leveling & Foundation Repair. Call 1-877-65-JACIT or reach out online."
+        path="/contact"
+      />
       {/* Contact Hero */}
       <section className="relative pt-40 pb-20 md:pt-48 md:pb-28 bg-jac-dark overflow-hidden">
         <div className="absolute inset-0 z-0">

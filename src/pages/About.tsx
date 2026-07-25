@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, ArrowRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PageSEO from '../components/PageSEO';
+import JsonLd from '../components/JsonLd';
 
 const BrandName = () => (
   <span className="inline-flex items-baseline font-normal tracking-normal lowercase">
@@ -33,9 +35,22 @@ const faqs = [
   },
   {
     question: "How can I schedule service or ask questions?",
-    answer: "Call 1-877-65-JACIT or email james@jacitfoundationrepair.com. Our team will answer questions and schedule your inspection promptly."
+    answer: "Call 1-877-65-JACIT or email james@jac-itfoundationrepair.com. Our team will answer questions and schedule your inspection promptly."
   }
 ];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqs.map(faq => ({
+    "@type": "Question",
+    "name": faq.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": faq.answer
+    }
+  }))
+};
 
 export default function About({ isLoading }: { isLoading?: boolean }) {
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
@@ -46,6 +61,12 @@ export default function About({ isLoading }: { isLoading?: boolean }) {
 
   return (
     <>
+      <PageSEO
+        title="About Us | Jac-It House Leveling & Foundation Repair"
+        description="Family-owned and operated for over 25 years, Jac-It House Leveling & Foundation Repair proudly serves homeowners across Deep East Texas."
+        path="/about"
+      />
+      <JsonLd id="about-faq" data={faqSchema} />
       {/* Hero Section */}
       <section className="relative pt-40 pb-20 md:pt-48 md:pb-28 bg-jac-dark overflow-hidden">
         <div className="absolute inset-0 z-0">

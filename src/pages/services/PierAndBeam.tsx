@@ -1,5 +1,6 @@
 import React from 'react';
 import ServiceTemplate from '../../components/ServiceTemplate';
+import PageSEO from '../../components/PageSEO';
 
 const faqs = [
   {
@@ -30,7 +31,13 @@ const faqs = [
 
 export default function PierAndBeam({ isLoading }: { isLoading?: boolean }) {
   return (
-    <ServiceTemplate
+    <>
+      <PageSEO
+        title="Pier & Beam Repair | Jac-It House Leveling & Foundation Repair"
+        description="Restoring stability to crawlspace foundations. Jac-It House Leveling & Foundation Repair delivers expert pier & beam repair across Deep East Texas."
+        path="/services/pier-and-beam"
+      />
+      <ServiceTemplate
       isLoading={isLoading}
       title="Pier & Beam Repair"
       subtitle="Restoring Stability to Crawlspace Foundations."
@@ -57,6 +64,7 @@ export default function PierAndBeam({ isLoading }: { isLoading?: boolean }) {
           </div>
         </>
       }
-    />
+      />
+    </>
   );
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import ServiceTemplate from '../../components/ServiceTemplate';
+import PageSEO from '../../components/PageSEO';
 
 const faqs = [
   {
@@ -30,7 +31,13 @@ const faqs = [
 
 export default function FoamInjection({ isLoading }: { isLoading?: boolean }) {
   return (
-    <ServiceTemplate
+    <>
+      <PageSEO
+        title="Foam Injection | Jac-It House Leveling & Foundation Repair"
+        description="Advanced polyurethane foam injection lifting from Jac-It House Leveling & Foundation Repair — fast, precise slab leveling across Deep East Texas."
+        path="/services/foam-injection"
+      />
+      <ServiceTemplate
       isLoading={isLoading}
       title="Foam Injection"
       subtitle="Advanced Polyurethane Lifting."
@@ -57,6 +64,7 @@ export default function FoamInjection({ isLoading }: { isLoading?: boolean }) {
           </div>
         </>
       }
-    />
+      />
+    </>
   );
 }
