@@ -16,6 +16,7 @@ import FoamInjection from './pages/services/FoamInjection';
 import DrainageSolutions from './pages/services/DrainageSolutions';
 import RootBarriers from './pages/services/RootBarriers';
 import CommercialPrep from './pages/services/CommercialPrep';
+import LocationsHub from './pages/locations/LocationsHub';
 import LocationPage from './pages/locations/LocationPage';
 import LoadingScreen from './components/LoadingScreen';
 
@@ -56,6 +57,7 @@ function AppContent() {
             <Route path="commercial-prep" element={<CommercialPrep isLoading={isLoading} />} />
           </Route>
           <Route path="locations">
+            <Route index element={<LocationsHub isLoading={isLoading} />} />
             <Route path="tyler" element={<LocationPage slug="tyler" isLoading={isLoading} />} />
             <Route path="lufkin" element={<LocationPage slug="lufkin" isLoading={isLoading} />} />
             <Route path="longview" element={<LocationPage slug="longview" isLoading={isLoading} />} />

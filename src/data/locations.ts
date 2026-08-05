@@ -14,6 +14,7 @@ export interface Location {
   county: string;
   navLabel: string;
   subtitle: string;
+  teaser: string;
   metaTitle: string;
   metaDescription: string;
   heroImage: string;
@@ -31,6 +32,8 @@ export const locations: Location[] = [
     county: 'Smith County',
     navLabel: 'Tyler, TX',
     subtitle: 'Foundation Repair & House Leveling in Tyler, TX',
+    teaser:
+      "Expansive clay soil and rolling terrain drive most of the movement we correct here, from historic pier and beam homes in the Azalea District to newer slab construction south of town.",
     metaTitle: 'Foundation Repair in Tyler, TX | Jac-It House Leveling',
     metaDescription:
       'Foundation repair and house leveling in Tyler, TX. Free inspections for pier & beam, slab, and drainage issues across Smith County. 25+ years of experience. Call 1-877-65-JACIT.',
@@ -112,6 +115,8 @@ export const locations: Location[] = [
     county: 'Angelina County',
     navLabel: 'Lufkin, TX',
     subtitle: 'Foundation Repair & House Leveling in Lufkin, TX',
+    teaser:
+      "Heavy Piney Woods rainfall and sandy soil over clay keep crawl spaces damp, rotting wood piers and beams in Lufkin's older pier and beam housing stock.",
     metaTitle: 'Foundation Repair in Lufkin, TX | Jac-It House Leveling',
     metaDescription:
       'Foundation repair and house leveling in Lufkin, TX. Free inspections for pier & beam, slab, and crawl space moisture problems in Angelina County. Call 1-877-65-JACIT.',
@@ -184,6 +189,8 @@ export const locations: Location[] = [
     county: 'Gregg County',
     navLabel: 'Longview, TX',
     subtitle: 'Foundation Repair & House Leveling in Longview, TX',
+    teaser:
+      "Clay that swells and shrinks with the seasons puts stair-step cracks in brick and separates door frames. We lift settled slabs and correct the drainage behind it.",
     metaTitle: 'Foundation Repair in Longview, TX | Jac-It House Leveling',
     metaDescription:
       'Foundation repair and house leveling in Longview, TX. Free inspections for slab and pier & beam foundations across Gregg County. 25+ years of experience. Call 1-877-65-JACIT.',
@@ -265,6 +272,8 @@ export const locations: Location[] = [
     county: 'Polk County',
     navLabel: 'Livingston, TX',
     subtitle: 'Foundation Repair & House Leveling in Livingston, TX',
+    teaser:
+      "A high water table near Lake Livingston keeps soil saturated year-round. We level lake houses, cabins, and in-town homes and stop the moisture that caused the damage.",
     metaTitle: 'Foundation Repair in Livingston, TX | Jac-It House Leveling',
     metaDescription:
       'Foundation repair and house leveling in Livingston, TX. Free inspections for pier & beam, lake-area, and slab foundations in Polk County. Call 1-877-65-JACIT.',
@@ -346,6 +355,8 @@ export const locations: Location[] = [
     county: 'Rusk County',
     navLabel: 'Henderson, TX',
     subtitle: 'Foundation Repair & House Leveling in Henderson, TX',
+    teaser:
+      "Henderson has a deep stock of older pier and beam homes, many still on original supports. We reset and replace piers and reinforce framing without compromising the structure.",
     metaTitle: 'Foundation Repair in Henderson, TX | Jac-It House Leveling',
     metaDescription:
       'Foundation repair and house leveling in Henderson, TX. Free inspections for historic pier & beam and slab foundations in Rusk County. Call 1-877-65-JACIT.',
@@ -427,6 +438,8 @@ export const locations: Location[] = [
     county: 'Nacogdoches County',
     navLabel: 'Nacogdoches, TX',
     subtitle: 'Foundation Repair & House Leveling in Nacogdoches, TX',
+    teaser:
+      "The oldest town in Texas has the housing stock to match. We work on historic homes, student rentals near SFA, and newer slab construction on the edges of town.",
     metaTitle: 'Foundation Repair in Nacogdoches, TX | Jac-It House Leveling',
     metaDescription:
       'Foundation repair and house leveling in Nacogdoches, TX. Free inspections for historic pier & beam, rental, and slab properties. 25+ years of experience. Call 1-877-65-JACIT.',
@@ -508,6 +521,8 @@ export const locations: Location[] = [
     county: 'Walker County',
     navLabel: 'Huntsville, TX',
     subtitle: 'Foundation Repair & House Leveling in Huntsville, TX',
+    teaser:
+      "Sandy soil erodes out from under footings and rolling terrain funnels runoff at foundations. We handle both pier and beam leveling and slab lifting across Walker County.",
     metaTitle: 'Foundation Repair in Huntsville, TX | Jac-It House Leveling',
     metaDescription:
       'Foundation repair and house leveling in Huntsville, TX. Free inspections for pier & beam and slab foundations across Walker County. 25+ years of experience. Call 1-877-65-JACIT.',

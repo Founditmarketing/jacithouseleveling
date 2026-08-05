@@ -176,13 +176,23 @@ export default function Layout() {
 
             {/* Desktop Locations Dropdown */}
             <div className="relative group/loc py-4">
-              <button className="text-sm font-bold tracking-wide uppercase group-hover/loc:text-jac-green transition-colors flex items-center gap-1">
+              <RouterNavLink
+                to="/locations"
+                className={({ isActive }) => `text-sm font-bold tracking-wide uppercase group-hover/loc:text-jac-green transition-colors flex items-center gap-1 ${isActive ? 'text-jac-green' : ''}`}
+              >
                 Locations <ChevronDown className="w-4 h-4 group-hover/loc:rotate-180 transition-transform duration-300" />
-              </button>
+              </RouterNavLink>
 
               {/* Dropdown Menu */}
               <div className="absolute top-[80%] left-0 pt-4 w-64 opacity-0 translate-y-2 pointer-events-none group-hover/loc:opacity-100 group-hover/loc:translate-y-0 group-hover/loc:pointer-events-auto transition-all duration-300 z-50">
                 <div className="bg-white border-t-2 border-jac-green shadow-xl flex flex-col py-2">
+                  <RouterNavLink
+                    end
+                    to="/locations"
+                    className="px-6 py-3 text-sm font-bold uppercase text-jac-charcoal hover:text-jac-green hover:bg-gray-50 transition-colors border-b border-gray-100"
+                  >
+                    All Service Areas
+                  </RouterNavLink>
                   {locations.map((location) => (
                     <RouterNavLink
                       key={location.slug}
@@ -304,6 +314,13 @@ export default function Layout() {
                       transition={{ duration: 0.3 }}
                       className="flex flex-col items-center gap-4 overflow-hidden pt-4"
                     >
+                      <Link
+                        to="/locations"
+                        onClick={() => setIsMobileMenuOpen(false)}
+                        className="text-lg text-jac-lime hover:text-white transition-colors uppercase font-bold tracking-wide"
+                      >
+                        All Service Areas
+                      </Link>
                       {locations.map((location) => (
                         <Link
                           key={location.slug}
@@ -404,6 +421,11 @@ export default function Layout() {
                   </Link>
                 </li>
               ))}
+              <li className="pt-2">
+                <Link to="/locations" className="text-jac-lime font-bold hover:text-white transition-colors inline-flex items-center gap-1">
+                  All Service Areas <ArrowRight className="w-3 h-3" />
+                </Link>
+              </li>
             </ul>
           </div>
 

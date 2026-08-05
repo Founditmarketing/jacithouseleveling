@@ -15,7 +15,7 @@ Jac-It House Leveling & Foundation Repair is a professional service providing fo
 - Drainage Solutions
 
 ## Service Areas
-We serve the Deep East Texas region. Each city below has a dedicated page covering local soil conditions, common foundation problems, and the communities we cover nearby:
+We serve the Deep East Texas region. See [all service areas](/locations) for an overview, or use the city pages below — each covers local soil conditions, common foundation problems, and the communities we cover nearby:
 - [Tyler, TX](/locations/tyler) - Smith County
 - [Lufkin, TX](/locations/lufkin) - Angelina County
 - [Longview, TX](/locations/longview) - Gregg County
@@ -44,6 +44,7 @@ We serve the Deep East Texas region. Each city below has a dedicated page coveri
 - [Repair Methods](/services/repair-methods)
 - [Foam Injection](/services/foam-injection)
 - [Drainage Solutions](/services/drainage-solutions)
+- [All Service Areas](/locations)
 - [Tyler, TX Foundation Repair](/locations/tyler)
 - [Lufkin, TX Foundation Repair](/locations/lufkin)
 - [Longview, TX Foundation Repair](/locations/longview)

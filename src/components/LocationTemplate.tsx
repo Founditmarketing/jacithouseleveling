@@ -105,7 +105,8 @@ export default function LocationTemplate({
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": `${SITE_URL}/` },
-      { "@type": "ListItem", "position": 2, "name": `${city}, TX`, "item": pageUrl }
+      { "@type": "ListItem", "position": 2, "name": "Locations", "item": `${SITE_URL}/locations` },
+      { "@type": "ListItem", "position": 3, "name": `${city}, TX`, "item": pageUrl }
     ]
   };
 
@@ -156,8 +157,10 @@ export default function LocationTemplate({
             transition={{ duration: 0.6, ease: "easeOut", delay: isLoading ? 0.7 : 0.05 }}
             className="flex items-center gap-2 text-jac-lime font-bold uppercase tracking-widest text-xs sm:text-sm mb-4"
           >
-            <MapPin className="w-4 h-4" />
-            {county}, Texas
+            <MapPin className="w-4 h-4 shrink-0" />
+            <Link to="/locations" className="hover:text-white transition-colors">Locations</Link>
+            <span className="text-white/40">/</span>
+            <span className="text-white/70">{county}, Texas</span>
           </motion.div>
 
           <motion.h1
@@ -311,6 +314,14 @@ export default function LocationTemplate({
           <p className="text-gray-500 text-sm mt-8 max-w-3xl leading-relaxed">
             Do not see your community listed? We cover the wider Deep East Texas region — give us a call and we will let you know right away whether we can get to you.
           </p>
+
+          <Link
+            to="/locations"
+            className="inline-flex items-center gap-2 mt-6 font-bold tracking-wide text-sm uppercase text-jac-charcoal hover:text-jac-green transition-colors group"
+          >
+            View All Service Areas
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
       </section>
 
