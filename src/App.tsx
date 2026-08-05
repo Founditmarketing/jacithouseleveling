@@ -16,6 +16,7 @@ import FoamInjection from './pages/services/FoamInjection';
 import DrainageSolutions from './pages/services/DrainageSolutions';
 import RootBarriers from './pages/services/RootBarriers';
 import CommercialPrep from './pages/services/CommercialPrep';
+import LocationPage from './pages/locations/LocationPage';
 import LoadingScreen from './components/LoadingScreen';
 
 function ScrollToTop() {
@@ -53,6 +54,15 @@ function AppContent() {
             <Route path="drainage-solutions" element={<DrainageSolutions isLoading={isLoading} />} />
             <Route path="root-barriers" element={<RootBarriers isLoading={isLoading} />} />
             <Route path="commercial-prep" element={<CommercialPrep isLoading={isLoading} />} />
+          </Route>
+          <Route path="locations">
+            <Route path="tyler" element={<LocationPage slug="tyler" isLoading={isLoading} />} />
+            <Route path="lufkin" element={<LocationPage slug="lufkin" isLoading={isLoading} />} />
+            <Route path="longview" element={<LocationPage slug="longview" isLoading={isLoading} />} />
+            <Route path="livingston" element={<LocationPage slug="livingston" isLoading={isLoading} />} />
+            <Route path="henderson" element={<LocationPage slug="henderson" isLoading={isLoading} />} />
+            <Route path="nacogdoches" element={<LocationPage slug="nacogdoches" isLoading={isLoading} />} />
+            <Route path="huntsville" element={<LocationPage slug="huntsville" isLoading={isLoading} />} />
           </Route>
         </Route>
       </Routes>

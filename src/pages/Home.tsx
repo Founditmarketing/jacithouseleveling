@@ -796,7 +796,15 @@ export default function Home({ isLoading }: { isLoading: boolean }) {
                   <MapPin className="w-6 h-6 text-jac-lime shrink-0 mt-1" />
                   <div>
                     <h5 className="font-bold text-white uppercase tracking-wide text-sm mb-2">East Texas Service Areas</h5>
-                    <p className="leading-relaxed text-gray-400">Livingston, Tyler, Lufkin, Longview, Henderson, Nacogdoches, Huntsville, and surrounding Deep East Texas communities.</p>
+                    <p className="leading-relaxed text-gray-400">
+                      <Link to="/locations/livingston" className="hover:text-jac-lime transition-colors">Livingston</Link>,{' '}
+                      <Link to="/locations/tyler" className="hover:text-jac-lime transition-colors">Tyler</Link>,{' '}
+                      <Link to="/locations/lufkin" className="hover:text-jac-lime transition-colors">Lufkin</Link>,{' '}
+                      <Link to="/locations/longview" className="hover:text-jac-lime transition-colors">Longview</Link>,{' '}
+                      <Link to="/locations/henderson" className="hover:text-jac-lime transition-colors">Henderson</Link>,{' '}
+                      <Link to="/locations/nacogdoches" className="hover:text-jac-lime transition-colors">Nacogdoches</Link>,{' '}
+                      <Link to="/locations/huntsville" className="hover:text-jac-lime transition-colors">Huntsville</Link>, and surrounding Deep East Texas communities.
+                    </p>
                   </div>
                 </div>
               </div>

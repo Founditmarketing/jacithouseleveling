@@ -13,6 +13,7 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 import FloatingContact from './FloatingContact';
 import JsonLd from './JsonLd';
+import { locations } from '../data/locations';
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
@@ -23,7 +24,11 @@ const localBusinessSchema = {
   "telephone": "+1-877-655-2248",
   "email": "james@jac-itfoundationrepair.com",
   "priceRange": "$$",
-  "areaServed": ["Tyler, TX", "Lufkin, TX", "Longview, TX", "Livingston, TX", "Henderson, TX"],
+  "areaServed": locations.map((location) => ({
+    "@type": "City",
+    "name": `${location.city}, TX`,
+    "url": `https://www.jac-itfoundationrepair.com/locations/${location.slug}`
+  })),
   "address": {
     "@type": "PostalAddress",
     "addressRegion": "TX",
@@ -79,6 +84,7 @@ export default function Layout() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [isMobileLocationsOpen, setIsMobileLocationsOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -143,7 +149,7 @@ export default function Layout() {
           </Link>
 
           {/* Nav */}
-          <nav className="hidden lg:flex items-center justify-center gap-8">
+          <nav className="hidden lg:flex items-center justify-center gap-5 xl:gap-8">
             <NavLink to="/">Home</NavLink>
             <NavLink to="/about">About Us</NavLink>
             
@@ -164,6 +170,28 @@ export default function Layout() {
                   <RouterNavLink to="/services/repair-methods" className="px-6 py-3 text-sm font-bold uppercase text-jac-charcoal hover:text-jac-green hover:bg-gray-50 transition-colors">Repair Methods</RouterNavLink>
                   <RouterNavLink to="/services/foam-injection" className="px-6 py-3 text-sm font-bold uppercase text-jac-charcoal hover:text-jac-green hover:bg-gray-50 transition-colors">Foam Injection</RouterNavLink>
                   <RouterNavLink to="/services/drainage-solutions" className="px-6 py-3 text-sm font-bold uppercase text-jac-charcoal hover:text-jac-green hover:bg-gray-50 transition-colors">Drainage Solutions</RouterNavLink>
+                </div>
+              </div>
+            </div>
+
+            {/* Desktop Locations Dropdown */}
+            <div className="relative group/loc py-4">
+              <button className="text-sm font-bold tracking-wide uppercase group-hover/loc:text-jac-green transition-colors flex items-center gap-1">
+                Locations <ChevronDown className="w-4 h-4 group-hover/loc:rotate-180 transition-transform duration-300" />
+              </button>
+
+              {/* Dropdown Menu */}
+              <div className="absolute top-[80%] left-0 pt-4 w-64 opacity-0 translate-y-2 pointer-events-none group-hover/loc:opacity-100 group-hover/loc:translate-y-0 group-hover/loc:pointer-events-auto transition-all duration-300 z-50">
+                <div className="bg-white border-t-2 border-jac-green shadow-xl flex flex-col py-2">
+                  {locations.map((location) => (
+                    <RouterNavLink
+                      key={location.slug}
+                      to={`/locations/${location.slug}`}
+                      className="px-6 py-3 text-sm font-bold uppercase text-jac-charcoal hover:text-jac-green hover:bg-gray-50 transition-colors"
+                    >
+                      {location.navLabel}
+                    </RouterNavLink>
+                  ))}
                 </div>
               </div>
             </div>
@@ -260,6 +288,37 @@ export default function Layout() {
                 </AnimatePresence>
               </div>
 
+              <div className="flex flex-col items-center">
+                <button
+                  onClick={() => setIsMobileLocationsOpen(!isMobileLocationsOpen)}
+                  className="font-display font-black text-2xl text-white uppercase hover:text-jac-lime transition-colors flex items-center justify-center gap-2"
+                >
+                  Locations <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${isMobileLocationsOpen ? 'rotate-180' : ''}`} />
+                </button>
+                <AnimatePresence>
+                  {isMobileLocationsOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="flex flex-col items-center gap-4 overflow-hidden pt-4"
+                    >
+                      {locations.map((location) => (
+                        <Link
+                          key={location.slug}
+                          to={`/locations/${location.slug}`}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                          className="text-lg text-white/80 hover:text-jac-lime transition-colors uppercase font-bold tracking-wide"
+                        >
+                          {location.navLabel}
+                        </Link>
+                      ))}
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
               <Link to="/gallery" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-2xl text-white uppercase hover:text-jac-lime transition-colors">Gallery</Link>
               <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)} className="font-display font-black text-2xl text-white uppercase hover:text-jac-lime transition-colors">Contact Us</Link>
               
@@ -338,11 +397,13 @@ export default function Layout() {
               <div className="w-8 h-[2px] bg-jac-lime"></div>
             </div>
             <ul className="space-y-4 text-sm text-gray-400 font-medium">
-              <li><span className="hover:text-jac-lime transition-colors cursor-default">Tyler</span></li>
-              <li><span className="hover:text-jac-lime transition-colors cursor-default">Lufkin</span></li>
-              <li><span className="hover:text-jac-lime transition-colors cursor-default">Longview</span></li>
-              <li><span className="hover:text-jac-lime transition-colors cursor-default">Livingston</span></li>
-              <li><span className="hover:text-jac-lime transition-colors cursor-default">Henderson</span></li>
+              {locations.map((location) => (
+                <li key={location.slug}>
+                  <Link to={`/locations/${location.slug}`} className="hover:text-jac-lime transition-colors">
+                    {location.city}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 

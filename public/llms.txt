@@ -15,14 +15,14 @@ Jac-It House Leveling & Foundation Repair is a professional service providing fo
 - Drainage Solutions
 
 ## Service Areas
-We serve the Deep East Texas region, including:
-- Tyler
-- Lufkin
-- Longview
-- Livingston
-- Henderson
-- Nacogdoches
-- Huntsville
+We serve the Deep East Texas region. Each city below has a dedicated page covering local soil conditions, common foundation problems, and the communities we cover nearby:
+- [Tyler, TX](/locations/tyler) - Smith County
+- [Lufkin, TX](/locations/lufkin) - Angelina County
+- [Longview, TX](/locations/longview) - Gregg County
+- [Livingston, TX](/locations/livingston) - Polk County
+- [Henderson, TX](/locations/henderson) - Rusk County
+- [Nacogdoches, TX](/locations/nacogdoches) - Nacogdoches County
+- [Huntsville, TX](/locations/huntsville) - Walker County
 - And surrounding communities
 
 ## Contact Information
@@ -44,3 +44,10 @@ We serve the Deep East Texas region, including:
 - [Repair Methods](/services/repair-methods)
 - [Foam Injection](/services/foam-injection)
 - [Drainage Solutions](/services/drainage-solutions)
+- [Tyler, TX Foundation Repair](/locations/tyler)
+- [Lufkin, TX Foundation Repair](/locations/lufkin)
+- [Longview, TX Foundation Repair](/locations/longview)
+- [Livingston, TX Foundation Repair](/locations/livingston)
+- [Henderson, TX Foundation Repair](/locations/henderson)
+- [Nacogdoches, TX Foundation Repair](/locations/nacogdoches)
+- [Huntsville, TX Foundation Repair](/locations/huntsville)
