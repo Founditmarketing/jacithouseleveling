@@ -21,6 +21,61 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.jac-itfoundationrepair.com/locations</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jac-itfoundationrepair.com/locations/tyler-tx</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jac-itfoundationrepair.com/locations/longview-tx</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jac-itfoundationrepair.com/locations/lufkin-tx</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jac-itfoundationrepair.com/locations/nacogdoches-tx</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jac-itfoundationrepair.com/locations/henderson-tx</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jac-itfoundationrepair.com/locations/jacksonville-tx</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jac-itfoundationrepair.com/locations/palestine-tx</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jac-itfoundationrepair.com/locations/marshall-tx</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jac-itfoundationrepair.com/locations/livingston-tx</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.jac-itfoundationrepair.com/locations/huntsville-tx</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://www.jac-itfoundationrepair.com/services/pier-and-beam</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

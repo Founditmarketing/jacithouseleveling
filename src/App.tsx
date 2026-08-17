@@ -16,6 +16,17 @@ import FoamInjection from './pages/services/FoamInjection';
 import DrainageSolutions from './pages/services/DrainageSolutions';
 import RootBarriers from './pages/services/RootBarriers';
 import CommercialPrep from './pages/services/CommercialPrep';
+import ServiceAreas from './pages/locations/ServiceAreas';
+import TylerLocation from './pages/locations/Tyler';
+import LongviewLocation from './pages/locations/Longview';
+import LufkinLocation from './pages/locations/Lufkin';
+import NacogdochesLocation from './pages/locations/Nacogdoches';
+import HendersonLocation from './pages/locations/Henderson';
+import JacksonvilleLocation from './pages/locations/Jacksonville';
+import PalestineLocation from './pages/locations/Palestine';
+import MarshallLocation from './pages/locations/Marshall';
+import LivingstonLocation from './pages/locations/Livingston';
+import HuntsvilleLocation from './pages/locations/Huntsville';
 import LoadingScreen from './components/LoadingScreen';
 
 function ScrollToTop() {
@@ -53,6 +64,19 @@ function AppContent() {
             <Route path="drainage-solutions" element={<DrainageSolutions isLoading={isLoading} />} />
             <Route path="root-barriers" element={<RootBarriers isLoading={isLoading} />} />
             <Route path="commercial-prep" element={<CommercialPrep isLoading={isLoading} />} />
+          </Route>
+          <Route path="locations">
+            <Route index element={<ServiceAreas isLoading={isLoading} />} />
+            <Route path="tyler-tx" element={<TylerLocation isLoading={isLoading} />} />
+            <Route path="longview-tx" element={<LongviewLocation isLoading={isLoading} />} />
+            <Route path="lufkin-tx" element={<LufkinLocation isLoading={isLoading} />} />
+            <Route path="nacogdoches-tx" element={<NacogdochesLocation isLoading={isLoading} />} />
+            <Route path="henderson-tx" element={<HendersonLocation isLoading={isLoading} />} />
+            <Route path="jacksonville-tx" element={<JacksonvilleLocation isLoading={isLoading} />} />
+            <Route path="palestine-tx" element={<PalestineLocation isLoading={isLoading} />} />
+            <Route path="marshall-tx" element={<MarshallLocation isLoading={isLoading} />} />
+            <Route path="livingston-tx" element={<LivingstonLocation isLoading={isLoading} />} />
+            <Route path="huntsville-tx" element={<HuntsvilleLocation isLoading={isLoading} />} />
           </Route>
         </Route>
       </Routes>

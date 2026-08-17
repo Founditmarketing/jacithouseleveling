@@ -25,6 +25,7 @@ import {
 import { motion, AnimatePresence } from 'framer-motion';
 import LoadingScreen from '../components/LoadingScreen';
 import PageSEO from '../components/PageSEO';
+import { LOCATIONS } from '../data/locations';
 
 const NavLink = ({ children, href = "#" }: { children: React.ReactNode, href?: string }) => (
   <a href={href} className="text-sm font-bold tracking-wide uppercase hover:text-jac-green transition-colors flex items-center gap-1 group">
@@ -45,6 +46,20 @@ const FooterBrandName = () => (
     <span style={{ fontFamily: "'Ethnocentric Rg', sans-serif" }} className="text-[0.85em]">ac-it</span>
   </span>
 );
+
+/** Decorative pin placement on the homepage service-area map, one per location page. */
+const mapPins = [
+  { slug: 'tyler-tx', label: 'Tyler', top: '25%', left: '48%' },
+  { slug: 'longview-tx', label: 'Longview', top: '30%', left: '65%' },
+  { slug: 'marshall-tx', label: 'Marshall', top: '33%', left: '80%' },
+  { slug: 'palestine-tx', label: 'Palestine', top: '37%', left: '24%' },
+  { slug: 'henderson-tx', label: 'Henderson', top: '43%', left: '60%' },
+  { slug: 'jacksonville-tx', label: 'Jacksonville', top: '48%', left: '40%' },
+  { slug: 'nacogdoches-tx', label: 'Nacogdoches', top: '57%', left: '66%' },
+  { slug: 'lufkin-tx', label: 'Lufkin', top: '68%', left: '55%' },
+  { slug: 'huntsville-tx', label: 'Huntsville', top: '75%', left: '30%' },
+  { slug: 'livingston-tx', label: 'Livingston', top: '82%', left: '48%' },
+];
 
 const galleryItems = [
   { src: "/jacitgallery.jpeg", title: "Wall Lifting", desc: "Hydraulic lifting of exterior brick foundation." },
@@ -796,7 +811,28 @@ export default function Home({ isLoading }: { isLoading: boolean }) {
                   <MapPin className="w-6 h-6 text-jac-lime shrink-0 mt-1" />
                   <div>
                     <h5 className="font-bold text-white uppercase tracking-wide text-sm mb-2">East Texas Service Areas</h5>
-                    <p className="leading-relaxed text-gray-400">Livingston, Tyler, Lufkin, Longview, Henderson, Nacogdoches, Huntsville, and surrounding Deep East Texas communities.</p>
+                    <p className="leading-relaxed text-gray-400 mb-4">
+                      Foundation repair and house leveling across Deep East Texas. Pick your city for local soil
+                      conditions, common warning signs and the services we run there.
+                    </p>
+                    <ul className="flex flex-wrap gap-2 mb-4">
+                      {LOCATIONS.map((location) => (
+                        <li key={location.slug}>
+                          <Link
+                            to={`/locations/${location.slug}`}
+                            className="inline-block border border-white/15 px-3 py-1.5 text-xs font-bold uppercase tracking-wide text-gray-300 hover:border-jac-lime hover:text-jac-lime transition-colors"
+                          >
+                            {location.city}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <Link
+                      to="/locations"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-jac-lime hover:text-white transition-colors"
+                    >
+                      View All Service Areas <ArrowRight className="w-4 h-4" />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -819,48 +855,21 @@ export default function Home({ isLoading }: { isLoading: boolean }) {
               {/* CSS Radius Overlay */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] sm:w-[80%] aspect-square max-w-[450px] max-h-[450px] rounded-full border-[5px] border-jac-lime bg-jac-lime/20 pointer-events-none z-10 animate-pulse shadow-[0_0_40px_rgba(151,204,4,0.6)]"></div>
 
-              {/* Decorative City Pins (Relative to center) */}
-              {/* Tyler - North */}
-              <div className="absolute top-[25%] left-[48%] z-20 flex flex-col items-center pointer-events-none -translate-x-1/2 -translate-y-1/2">
-                <div className="bg-white text-jac-charcoal text-[9px] md:text-[10px] font-bold px-1.5 py-0.5 rounded shadow-lg whitespace-nowrap mb-0.5">Tyler</div>
-                <div className="w-3 h-3 md:w-4 md:h-4 bg-jac-lime border-[2px] border-white rounded-full shadow-lg"></div>
-              </div>
-              
-              {/* Longview - North East */}
-              <div className="absolute top-[30%] left-[65%] z-20 flex flex-col items-center pointer-events-none -translate-x-1/2 -translate-y-1/2">
-                <div className="bg-white text-jac-charcoal text-[9px] md:text-[10px] font-bold px-1.5 py-0.5 rounded shadow-lg whitespace-nowrap mb-0.5">Longview</div>
-                <div className="w-3 h-3 md:w-4 md:h-4 bg-jac-lime border-[2px] border-white rounded-full shadow-lg"></div>
-              </div>
-
-              {/* Henderson - East */}
-              <div className="absolute top-[42%] left-[60%] z-20 flex flex-col items-center pointer-events-none -translate-x-1/2 -translate-y-1/2">
-                <div className="bg-white text-jac-charcoal text-[9px] md:text-[10px] font-bold px-1.5 py-0.5 rounded shadow-lg whitespace-nowrap mb-0.5">Henderson</div>
-                <div className="w-3 h-3 md:w-4 md:h-4 bg-jac-lime border-[2px] border-white rounded-full shadow-lg"></div>
-              </div>
-
-              {/* Nacogdoches - South East */}
-              <div className="absolute top-[55%] left-[62%] z-20 flex flex-col items-center pointer-events-none -translate-x-1/2 -translate-y-1/2">
-                <div className="bg-white text-jac-charcoal text-[9px] md:text-[10px] font-bold px-1.5 py-0.5 rounded shadow-lg whitespace-nowrap mb-0.5">Nacogdoches</div>
-                <div className="w-3 h-3 md:w-4 md:h-4 bg-jac-lime border-[2px] border-white rounded-full shadow-lg"></div>
-              </div>
-
-              {/* Lufkin - South */}
-              <div className="absolute top-[68%] left-[55%] z-20 flex flex-col items-center pointer-events-none -translate-x-1/2 -translate-y-1/2">
-                <div className="bg-white text-jac-charcoal text-[9px] md:text-[10px] font-bold px-1.5 py-0.5 rounded shadow-lg whitespace-nowrap mb-0.5">Lufkin</div>
-                <div className="w-3 h-3 md:w-4 md:h-4 bg-jac-lime border-[2px] border-white rounded-full shadow-lg"></div>
-              </div>
-
-              {/* Livingston - Deep South */}
-              <div className="absolute top-[82%] left-[45%] z-20 flex flex-col items-center pointer-events-none -translate-x-1/2 -translate-y-1/2">
-                <div className="bg-white text-jac-charcoal text-[9px] md:text-[10px] font-bold px-1.5 py-0.5 rounded shadow-lg whitespace-nowrap mb-0.5">Livingston</div>
-                <div className="w-3 h-3 md:w-4 md:h-4 bg-jac-lime border-[2px] border-white rounded-full shadow-lg"></div>
-              </div>
-
-              {/* Huntsville - South West */}
-              <div className="absolute top-[75%] left-[30%] z-20 flex flex-col items-center pointer-events-none -translate-x-1/2 -translate-y-1/2">
-                <div className="bg-white text-jac-charcoal text-[9px] md:text-[10px] font-bold px-1.5 py-0.5 rounded shadow-lg whitespace-nowrap mb-0.5">Huntsville</div>
-                <div className="w-3 h-3 md:w-4 md:h-4 bg-jac-lime border-[2px] border-white rounded-full shadow-lg"></div>
-              </div>
+              {/* Decorative City Pins — one per location page, positioned by rough geography */}
+              {mapPins.map((pin) => (
+                <Link
+                  key={pin.slug}
+                  to={`/locations/${pin.slug}`}
+                  style={{ top: pin.top, left: pin.left }}
+                  className="absolute z-20 flex flex-col items-center -translate-x-1/2 -translate-y-1/2 group/pin"
+                  aria-label={`Foundation repair in ${pin.label}, Texas`}
+                >
+                  <div className="bg-white text-jac-charcoal text-[9px] md:text-[10px] font-bold px-1.5 py-0.5 rounded shadow-lg whitespace-nowrap mb-0.5 group-hover/pin:bg-jac-lime transition-colors">
+                    {pin.label}
+                  </div>
+                  <div className="w-3 h-3 md:w-4 md:h-4 bg-jac-lime border-[2px] border-white rounded-full shadow-lg group-hover/pin:scale-125 transition-transform"></div>
+                </Link>
+              ))}
             </div>
           </div>
 

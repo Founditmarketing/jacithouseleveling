@@ -15,15 +15,23 @@ Jac-It House Leveling & Foundation Repair is a professional service providing fo
 - Drainage Solutions
 
 ## Service Areas
-We serve the Deep East Texas region, including:
-- Tyler
-- Lufkin
-- Longview
-- Livingston
-- Henderson
-- Nacogdoches
-- Huntsville
-- And surrounding communities
+We serve East Texas and Deep East Texas. Each city below has a dedicated page covering local soil
+conditions, common foundation warning signs and the services we run there:
+
+- [Tyler, TX](/locations/tyler-tx) — Smith County. Sandy loam over dense clay on rolling iron-ore ridges; erosion and washout rather than clay swell.
+- [Longview, TX](/locations/longview-tx) — Gregg County. 1930s oil-boom pier and beam housing stock on soils with a high water table.
+- [Lufkin, TX](/locations/lufkin-tx) — Angelina County. Heavy Piney Woods rainfall, sand perched over tight clay, and pine root moisture loss.
+- [Nacogdoches, TX](/locations/nacogdoches-tx) — Nacogdoches County. Redland clay loam, real topography, and historic homes on original piers.
+- [Henderson, TX](/locations/henderson-tx) — Rusk County. Rural acreage homes and owner-built additions on separate footings.
+- [Jacksonville, TX](/locations/jacksonville-tx) — Cherokee County. Cut-and-fill hillside homesites along the Love's Lookout ridges.
+- [Palestine, TX](/locations/palestine-tx) — Anderson County. Expansive clay shrink-swell and Victorian-era shallow pier foundations.
+- [Marshall, TX](/locations/marshall-tx) — Harrison County. Red clay uplands under 1800s architecture on shallow original piers.
+- [Livingston, TX](/locations/livingston-tx) — Polk County. Saturated lake and bottomland soils under waterfront and seasonal property.
+- [Huntsville, TX](/locations/huntsville-tx) — Walker County. A soil transition zone where sandy uplands and clay pockets sit a street apart.
+
+We also serve surrounding communities including Whitehouse, Bullard, Lindale, Kilgore, White Oak,
+Gladewater, Hallsville, Diboll, Hudson, Huntington, Appleby, Garrison, Tatum, Overton, Rusk, Alto,
+Elkhart, Frankston, Grapeland, Waskom, Jefferson, Onalaska, Corrigan, New Waverly and Willis.
 
 ## Contact Information
 - **Toll-Free Phone**: [1-877-655-2248](tel:18776552248) (1-877-65-JACIT)
@@ -34,6 +42,7 @@ We serve the Deep East Texas region, including:
 ## Navigation
 - [Home](/)
 - [About Us](/about)
+- [Service Areas](/locations)
 - [Gallery](/gallery)
 - [Contact Us](/contact)
 - [Pier & Beam Repair](/services/pier-and-beam)
